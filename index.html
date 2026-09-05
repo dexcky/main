@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Promise Dexter Kaparadza — Virtual Assistant & Administrative Support</title>
+<meta name="description" content="Promise Dexter Kaparadza is a remote Virtual Assistant offering administrative support, customer & sales support, and travel assistance for entrepreneurs, executives, and growing businesses." />
+<meta name="keywords" content="Promise Dexter Kaparadza, Virtual Assistant, Administrative Assistant, Customer Support , Sales Support Assistant, Travel Virtual Assistant, Remote Operations Support" />
+<meta name="author" content="Promise Dexter Kaparadza" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Promise Dexter Kaparadza — Virtual Assistant & Administrative Support" />
+<meta property="og:description" content="Reliable remote support for entrepreneurs, executives, and growing businesses — administration, customer & sales support, and travel coordination." />
+<meta property="og:image" content="https://placehold.co/1200x630/2563EB/FFFFFF?text=Promise+Dexter+Kaparadza" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Promise Dexter Kaparadza — Virtual Assistant" />
+<meta name="twitter:description" content="administrative assistant, customer & sales support, and travel assistance for remote-first businesses." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563EB'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='600' fill='%23FFFFFF' text-anchor='middle'%3EPD%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('pdk-theme');
+      document.documentElement.setAttribute('data-theme', stored ? stored : 'light');
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  })();
+</script>
+
+<style>
+  :root[data-theme="light"] {
+    --bg: #FFFFFF;
+    --bg-secondary: #F8FAFC;
+    --card: #FFFFFF;
+    --accent: #2563EB;
+    --accent-2: #7C3AED;
+    --text: #0F172A;
+    --text-secondary: #334155;
+    --text-muted: #64748B;
+    --border: #E2E8F0;
+    --shadow: 0 1px 2px rgba(15,23,42,.04), 0 12px 32px -16px rgba(15,23,42,.12);
+    --overlay: rgba(15,23,42,.55);
+  }
+  :root[data-theme="dark"] {
+    --bg: #07111F;
+    --bg-secondary: #0B1728;
+    --card: #0D1B2A;
+    --accent: #38BDF8;
+    --accent-2: #818CF8;
+    --text: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --border: rgba(148,163,184,.18);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 20px 48px -20px rgba(0,0,0,.55);
+    --overlay: rgba(3,9,18,.7);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color .35s ease, color .35s ease;
+    overflow-x: hidden;
+  }
+  .font-display { font-family: 'Fraunces', 'Iowan Old Style', serif; }
+  ::selection { background: var(--accent); color: #fff; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+  .container-page { max-width: 1180px; margin-inline: auto; padding-inline: 1.5rem; }
+  @media (min-width: 768px) { .container-page { padding-inline: 2.5rem; } }
+  .section-pad { padding-block: clamp(2.75rem, 5vw, 4.75rem); }
+  .section-pad .mt-12 { margin-top: 2rem !important; }
+  .section-pad .mt-14 { margin-top: 2.5rem !important; }
+  .section-pad .mt-10 { margin-top: 2rem !important; }
+  .section-pad .mt-8 { margin-top: 1.5rem !important; }
+  .section-pad p { max-width: 70ch; }
+  .card-surface { background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow); }
+  .bg-secondary { background-color: var(--bg-secondary); }
+  .text-balance { text-wrap: balance; }
+  .icon { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; }
+  .project-evidence { display:none; }
+  .project-evidence.has-link { display:inline-flex; }
+  .asset-note { border:1px dashed var(--border); background:var(--bg-secondary); }
+  @media (max-width: 639px) {
+    #role-rotator { height: 2.8em; width: 100%; }
+    #role-rotator span.role-item { line-height: 1.35; }
+  }
+
+  /* scroll reveal */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+  @keyframes ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+  .animate-ping-slow { animation: ping 1.6s cubic-bezier(0,0,.2,1) infinite; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .animate-ping-slow { animation: none !important; }
+  }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 8px; }
+
+  /* rotating hero role */
+  #role-rotator { position: relative; display: inline-block; height: 1.55em; overflow: hidden; vertical-align: bottom; min-width: 0; width: min(100%, 430px); }
+  #role-rotator span.role-item { max-width: 100%; overflow: visible; text-overflow: clip; }
+  #role-rotator span.role-item {
+    position: absolute; left: 0; top: 0; white-space: normal; width: 100%;
+    font-style: italic; color: var(--accent);
+    transition: transform .5s cubic-bezier(.22,1,.36,1), opacity .5s cubic-bezier(.22,1,.36,1);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ============================= NAVBAR ============================= -->
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:var(--bg);border-bottom:1px solid var(--border);">
+  <nav class="container-page flex h-16 md:h-20 items-center justify-between">
+    <a href="#home" class="font-display text-xl md:text-2xl font-semibold tracking-tight" style="color:var(--text)">
+      PD<span class="hidden sm:inline" style="color:var(--text-muted)">.</span>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-8" id="nav-links-desktop"></div>
+
+    <div class="hidden lg:flex items-center gap-3">
+      <button id="theme-toggle-desktop" aria-label="Toggle dark mode" class="inline-flex h-9 w-9 items-center justify-center rounded-full border transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" style="border-color:var(--border);color:var(--text)"></button>
+      <a href="assets/cv.pdf" download class="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5 shadow-sm" style="background-color:var(--accent)">
+        <span class="icon" data-icon="download" data-size="15"></span> Download CV
+      </a>
+    </div>
+
+    <div class="flex items-center gap-2 lg:hidden">
+      <button id="theme-toggle-mobile" aria-label="Toggle dark mode" class="inline-flex h-9 w-9 items-center justify-center rounded-full border" style="border-color:var(--border);color:var(--text)"></button>
+      <button id="menu-toggle" aria-label="Open menu" class="inline-flex h-9 w-9 items-center justify-center rounded-full border" style="border-color:var(--border);color:var(--text)"></button>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="lg:hidden hidden border-t shadow-lg" style="background-color:var(--bg);border-color:var(--border)">
+    <div class="container-page flex flex-col gap-2 py-4" id="nav-links-mobile"></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================= HERO ============================= -->
+<section id="home" class="relative overflow-hidden pt-28 pb-16 md:pt-40 md:pb-24">
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10" style="background: radial-gradient(60% 50% at 85% 10%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%), radial-gradient(45% 40% at 10% 30%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 65%);"></div>
+
+  <div class="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
+    <div class="reveal">
+      <span class="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide" style="background-color:var(--bg-secondary);color:var(--text-secondary);border:1px solid var(--border)">
+        <span class="h-1.5 w-1.5 rounded-full" style="background-color:var(--accent)"></span>
+        Welcome to my personal portfolio
+      </span>
+
+      <h1 class="font-display mt-6 text-[2.6rem] leading-[1.05] font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl" style="color:var(--text)">
+        Hi, I'm Promise Dexter Kaparadza.
+      </h1>
+
+      <p class="mt-3 text-lg font-medium sm:text-2xl md:text-[1.7rem]" style="color:var(--text-secondary)">
+        <span id="role-rotator"></span>
+      </p>
+
+      <p class="mt-6 max-w-xl text-base leading-relaxed sm:text-lg" style="color:var(--text-muted)">
+        I help businesses and professionals stay organized, responsive, and productive by supporting the administrative, customer service, sales, research, travel, and day-to-day tasks that keep work moving.
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-3.5">
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5" style="background-color:var(--accent)">
+          Hire Me <span class="icon" data-icon="arrow-right" data-size="16"></span>
+        </a>
+        <a href="#portfolio" class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-transform hover:-translate-y-0.5" style="border:1px solid var(--border);color:var(--text)">
+          View My Work
+        </a>
+        <a href="assets/cv.pdf" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold transition-colors hover:opacity-70" style="color:var(--text-secondary)">
+          <span class="icon" data-icon="file-text" data-size="16"></span> View CV
+        </a>
+        <a href="assets/cv.pdf" download class="inline-flex items-center gap-2 rounded-full px-5 py-3.5 text-sm font-semibold transition-colors hover:opacity-70" style="color:var(--text-secondary)">
+          <span class="icon" data-icon="file-down" data-size="16"></span> Download CV
+        </a>
+      </div>
+
+      <div class="mt-9 flex flex-wrap items-center gap-5">
+        <span class="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium" style="background-color:color-mix(in srgb, var(--accent) 12%, transparent);color:var(--accent)">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping-slow rounded-full opacity-60" style="background-color:var(--accent)"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full" style="background-color:var(--accent)"></span>
+          </span>
+          Available for Remote Opportunities
+        </span>
+
+        <div class="flex items-center gap-3">
+          <a href="https://www.linkedin.com/in/promise-kaparadza-93b70a20b" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="hover:opacity-80 transition-opacity" style="color:var(--text-muted)"><span class="icon" data-icon="linkedin" data-size="19"></span></a>
+          <a href="mailto:promisedexterkaparadza@gmail.com" aria-label="Email" class="hover:opacity-80 transition-opacity" style="color:var(--text-muted)"><span class="icon" data-icon="mail" data-size="19"></span></a>
+          <a href="https://wa.me/263776768932" target="_blank" rel="noreferrer" aria-label="WhatsApp" class="hover:opacity-80 transition-opacity" style="color:var(--text-muted)"><span class="icon" data-icon="message-circle" data-size="19"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal relative mx-auto aspect-[4/5] w-full max-w-sm">
+      <div aria-hidden="true" class="absolute -inset-4 -z-10 rounded-[2.4rem]" style="border:1px solid var(--border)"></div>
+      <div aria-hidden="true" class="absolute -right-6 -top-6 -z-10 h-24 w-24 rounded-full" style="background-color:color-mix(in srgb, var(--accent-2) 18%, transparent)"></div>
+      <div aria-hidden="true" class="absolute -bottom-8 -left-6 -z-10 h-32 w-32 rounded-full blur-2xl" style="background-color:color-mix(in srgb, var(--accent) 25%, transparent)"></div>
+
+      <img id="profile-img" src="assets/profile.jpeg" alt="Promise Dexter Kaparadza" class="h-full w-full rounded-[2rem] object-cover" onerror="this.classList.add('hidden'); document.getElementById('profile-fallback').classList.remove('hidden'); document.getElementById('profile-fallback').classList.add('flex');" />
+      <div id="profile-fallback" class="hidden h-full w-full items-center justify-center rounded-[2rem] shadow-inner" style="background-color:var(--bg-secondary);border:1px solid var(--border)">
+        <span class="font-display text-6xl md:text-7xl font-bold tracking-wider" style="color:var(--accent)">PD</span>
+      </div>
+
+      <div class="card-surface absolute -left-8 bottom-8 hidden w-48 rounded-2xl px-4 py-3 sm:block">
+        <p class="text-xs font-semibold" style="color:var(--text)">Open to supporting</p>
+        <p class="mt-0.5 text-xs" style="color:var(--text-muted)">Remote & international clients</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="about" class="section-pad bg-secondary">
+  <div class="container-page grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+    <div class="reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">About Me</h2>
+      <div class="mt-6 space-y-4">
+        <p class="text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">I'm a Virtual Assistant and administrative support professional with experience across business operations, customer communication, sales support, travel reservations, research, and documentation. I combine practical work experience with strong organization, communication, and attention to detail to help clients stay focused on their priorities.</p>
+        <p class="text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">I hold a BSc (Honours) in Political Science and Diplomacy from the University of Zimbabwe, which shaped how I work day to day: careful research, clear writing, structured thinking, and staying calm when there's a lot going on at once. I bring that same approach to inboxes, calendars, CRMs, and client conversations.</p>
+      </div>
+    </div>
+
+    <div class="reveal grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div class="card-surface rounded-2xl p-6">
+        <span class="icon" data-icon="search" data-size="22" style="color:var(--accent)"></span>
+        <p class="mt-4 text-sm font-semibold" style="color:var(--text)">Research</p>
+      </div>
+      <div class="card-surface rounded-2xl p-6">
+        <span class="icon" data-icon="message-square" data-size="22" style="color:var(--accent)"></span>
+        <p class="mt-4 text-sm font-semibold" style="color:var(--text)">Communication</p>
+      </div>
+      <div class="card-surface rounded-2xl p-6">
+        <span class="icon" data-icon="graduation-cap" data-size="22" style="color:var(--accent)"></span>
+        <p class="mt-4 text-sm font-semibold" style="color:var(--text)">Organization & critical thinking</p>
+      </div>
+      <div class="card-surface rounded-2xl p-6">
+        <span class="icon" data-icon="globe" data-size="22" style="color:var(--accent)"></span>
+        <p class="mt-4 text-sm font-semibold" style="color:var(--text)">International awareness</p>
+      </div>
+      <div class="card-surface col-span-full rounded-2xl p-6">
+        <p class="text-xs font-semibold uppercase tracking-wide" style="color:var(--accent)">Education</p>
+        <p class="font-display mt-2 text-lg font-medium" style="color:var(--text)">BSc (Honours) in Political Science and Diplomacy</p>
+        <p class="mt-1 text-sm" style="color:var(--text-muted)">University of Zimbabwe</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= EXPERIENCE ============================= -->
+<section id="experience" class="section-pad">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Experience</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Where I've supported operations, sales, customers, and travel — remote and on-site.</p>
+    </div>
+    <div class="relative mt-12">
+      <div aria-hidden="true" class="absolute left-[7px] top-2 bottom-2 w-px sm:left-[9px]" style="background-color:var(--border)"></div>
+      <ol class="space-y-10" id="experience-list"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SKILLS ============================= -->
+<section id="skills" class="section-pad bg-secondary">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Skills</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">The tools and areas I work in most, grouped by what they're used for.</p>
+    </div>
+    <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2" id="skills-groups"></div>
+    <div class="card-surface reveal mt-5 rounded-2xl p-6 sm:p-7">
+      <h3 class="font-display text-lg font-semibold" style="color:var(--text)">Technology & Emerging Skills</h3>
+      <div class="mt-4 flex flex-wrap gap-2.5" id="emerging-skills"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SERVICES ============================= -->
+<section id="services" class="section-pad">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Services</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Ways I can take work off your plate, depending on what's piling up.</p>
+    </div>
+    <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" id="services-grid"></div>
+  </div>
+</section>
+
+<!-- ============================= PORTFOLIO ============================= -->
+<section id="portfolio" class="section-pad bg-secondary">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">My Work</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">A selection of projects demonstrating how I organize information, support clients, and improve day-to-day workflows.</p>
+    </div>
+    <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="portfolio-grid"></div>
+  </div>
+</section>
+
+<!-- Portfolio modal -->
+<div id="project-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 backdrop-blur-sm" style="background-color:var(--overlay)">
+  <div class="card-surface w-full max-w-lg overflow-hidden rounded-2xl shadow-2xl transition-all" id="project-modal-inner" style="background-color:var(--card)">
+    <div class="aspect-[16/9] overflow-hidden relative bg-slate-100 dark:bg-slate-800" id="project-modal-image"></div>
+    <div class="p-6">
+      <div class="flex items-start justify-between gap-4">
+        <h3 class="font-display text-xl font-semibold" id="project-modal-title" style="color:var(--text)"></h3>
+        <button type="button" id="project-modal-close" aria-label="Close" class="shrink-0 rounded-full p-1.5 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" style="color:var(--text-muted)">
+          <span class="icon" data-icon="x" data-size="18"></span>
+        </button>
+      </div>
+      <span class="mt-2 inline-block rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide" id="project-modal-tag" style="background-color:color-mix(in srgb, var(--accent-2) 15%, transparent);color:var(--accent-2)"></span>
+      <p class="mt-4 text-sm font-semibold" style="color:var(--text)">Objective</p>
+      <p class="mt-1 text-sm leading-relaxed" id="project-modal-objective" style="color:var(--text-secondary)"></p>
+      <p class="mt-4 text-sm font-semibold" style="color:var(--text)">Outcome</p>
+      <p class="mt-1 text-sm leading-relaxed" id="project-modal-outcome" style="color:var(--text-secondary)"></p>
+      <p class="mt-4 text-sm font-semibold" style="color:var(--text)">Tools used</p>
+      <div class="mt-2 flex flex-wrap gap-2" id="project-modal-tools"></div>
+      <div class="mt-5">
+        <a id="project-modal-evidence" href="#" target="_blank" rel="noreferrer" class="project-evidence items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white" style="background-color:var(--accent)">
+          <span class="icon" data-icon="external-link" data-size="14"></span> View Full Image / Evidence
+        </a>
+        <p id="project-modal-evidence-note" class="asset-note rounded-xl px-3 py-2 text-xs leading-relaxed" style="color:var(--text-muted)">Project evidence is loaded from <strong>assets/work/</strong>. Click the button above to view full high-resolution assets.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= EDUCATION & CERTIFICATIONS ============================= -->
+<section id="education" class="section-pad">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Education & Credentials</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Academic qualifications and professional certifications.</p>
+    </div>
+    
+    <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2" id="education-grid"></div>
+
+    <div class="mt-12 reveal">
+      <h3 class="font-display text-xl font-semibold tracking-tight sm:text-2xl" style="color:var(--text)">Certifications</h3>
+      <p class="mt-2 text-sm" style="color:var(--text-muted)">Click on any certification to view the PDF credential.</p>
+      <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" id="certifications-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WHY HIRE ME ============================= -->
+<section id="why-hire-me" class="section-pad bg-secondary">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Why Work With Me</h2>
+    </div>
+    <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" id="why-grid"></div>
+  </div>
+</section>
+
+<!-- ============================= WORKFLOW ============================= -->
+<section class="section-pad">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">How We'd Work Together</h2>
+    </div>
+    <div class="relative mt-14">
+      <div aria-hidden="true" class="absolute left-0 right-0 top-6 hidden h-px lg:block" style="background-color:var(--border)"></div>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5" id="workflow-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TESTIMONIALS ============================= -->
+<section id="testimonials" class="section-pad bg-secondary">
+  <div class="container-page">
+    <div class="max-w-2xl reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Testimonials</h2>
+    </div>
+    <div class="card-surface reveal mt-10 flex flex-col items-center rounded-2xl px-6 py-16 text-center" style="border-style:dashed">
+      <span class="icon" data-icon="quote" data-size="30" style="color:var(--text-muted)"></span>
+      <p class="font-display mt-4 text-xl font-medium" style="color:var(--text)">Client Feedback Coming Soon</p>
+      <p class="mt-2 max-w-sm text-sm" style="color:var(--text-muted)">Genuine testimonials from clients will appear here as projects are completed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section id="contact" class="section-pad">
+  <div class="container-page grid grid-cols-1 gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+    <div class="reveal">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Let's Work Together</h2>
+      <p class="mt-4 text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">Have tasks piling up, customers waiting for responses, or administrative work taking time away from your priorities? Let's talk about how I can support your business.</p>
+      <div class="mt-8 space-y-4">
+        <a href="mailto:promisedexterkaparadza@gmail.com" class="flex items-center gap-3 text-sm font-medium hover:opacity-80 transition-opacity" style="color:var(--text)">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full" style="background-color:var(--card);border:1px solid var(--border)"><span class="icon" data-icon="mail" data-size="17" style="color:var(--accent)"></span></span>
+          promisedexterkaparadza@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/promise-kaparadza-93b70a20b" target="_blank" rel="noreferrer" class="flex items-center gap-3 text-sm font-medium hover:opacity-80 transition-opacity" style="color:var(--text)">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full" style="background-color:var(--card);border:1px solid var(--border)"><span class="icon" data-icon="linkedin" data-size="17" style="color:var(--accent)"></span></span>
+          LinkedIn Profile
+        </a>
+        <a href="https://wa.me/263776768932" id="whatsapp-link" target="_blank" rel="noreferrer" class="flex items-center gap-3 text-sm font-medium hover:opacity-80 transition-opacity" style="color:var(--text)">
+          <span class="flex h-10 w-10 items-center justify-center rounded-full" style="background-color:var(--card);border:1px solid var(--border)"><span class="icon" data-icon="message-circle" data-size="17" style="color:var(--accent)"></span></span>
+          WhatsApp Chat
+        </a>
+      </div>
+    </div>
+
+    <form id="contact-form" class="card-surface reveal rounded-2xl p-6 sm:p-8">
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <label class="block">
+          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Name</span>
+          <input required type="text" name="name" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" />
+        </label>
+        <label class="block">
+          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Email</span>
+          <input required type="email" name="email" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" />
+        </label>
+        <label class="block">
+          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Company</span>
+          <input type="text" name="company" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" />
+        </label>
+        <label class="block">
+          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Preferred Contact Method</span>
+          <select name="contactMethod" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)">
+            <option>Email</option><option>WhatsApp</option><option>LinkedIn</option>
+          </select>
+        </label>
+        <label class="block sm:col-span-2">
+          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Service Needed</span>
+          <select name="service" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" id="service-select"></select>
+        </label>
+        <label class="block sm:col-span-2">
+          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Message</span>
+          <textarea required rows="4" name="message" class="mt-1.5 w-full resize-none rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)"></textarea>
+        </label>
+      </div>
+      <p class="mt-4 text-xs leading-relaxed" style="color:var(--text-muted)">When you submit this form, your preferred contact method will open with your message prepared. No information is stored on this static website.</p>
+      <button type="submit" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-transform hover:-translate-y-0.5 sm:w-auto" style="background-color:var(--accent)">
+        <span class="icon" data-icon="send" data-size="15"></span> Let's Work Together
+      </button>
+      <p class="mt-3 text-xs hidden" id="contact-status" style="color:var(--text-muted)">Your preferred contact option has been opened with your message prepared. Complete the send/message step in the app that opens.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================= FINAL CTA ============================= -->
+<section class="section-pad">
+  <div class="container-page">
+    <div class="relative overflow-hidden rounded-[2rem] px-6 py-16 text-center sm:px-12 sm:py-20 reveal shadow-xl" style="background-color:var(--text)">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0" style="background: radial-gradient(50% 60% at 20% 0%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 65%), radial-gradient(45% 55% at 90% 100%, color-mix(in srgb, var(--accent-2) 30%, transparent), transparent 65%);"></div>
+      <h2 class="font-display relative mx-auto max-w-2xl text-balance text-3xl font-semibold leading-tight sm:text-4xl" style="color:var(--bg)">
+        Your business doesn't need more busywork. It needs the right support.
+      </h2>
+      <div class="relative mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href="#contact" class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-transform hover:-translate-y-0.5 shadow-md" style="background-color:var(--accent);color:#fff">
+          Let's Work Together
+        </a>
+        <a href="assets/cv.pdf" download class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-white/10" style="border:1px solid rgba(255,255,255,0.3);color:var(--bg)">
+          <span class="icon" data-icon="download" data-size="16"></span> Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="border-t py-12" style="border-color:var(--border);background-color:var(--bg-secondary)">
+  <div class="container-page flex flex-col items-center justify-between gap-6 sm:flex-row">
+    <p class="text-xs" style="color:var(--text-muted)">&copy; Promise Dexter Kaparadza. All rights reserved.</p>
+    <div class="flex items-center gap-6">
+      <a href="https://www.linkedin.com/in/promise-kaparadza-93b70a20b" target="_blank" rel="noreferrer" class="text-xs hover:opacity-80 transition-opacity" style="color:var(--text-muted)">LinkedIn</a>
+      <a href="mailto:promisedexterkaparadza@gmail.com" class="text-xs hover:opacity-80 transition-opacity" style="color:var(--text-muted)">Email</a>
+      <a href="https://wa.me/263776768932" target="_blank" rel="noreferrer" class="text-xs hover:opacity-80 transition-opacity" style="color:var(--text-muted)">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// --- ICON RENDERER ---
+const SVG_ICONS = {
+  'download': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+  'arrow-right': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>',
+  'file-text': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+  'file-down': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>',
+  'linkedin': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+  'mail': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>',
+  'message-circle': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>',
+  'search': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
+  'message-square': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+  'graduation-cap': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>',
+  'globe': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+  'external-link': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>',
+  'sun': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>',
+  'moon': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>',
+  'menu': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>',
+  'x': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
+  'send': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>',
+  'quote': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h3c0 4-2 6-4 6"/></svg>',
+  'award': '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>'
+};
+
+function renderIcons() {
+  document.querySelectorAll('.icon').forEach(el => {
+    const iconKey = el.getAttribute('data-icon');
+    const size = el.getAttribute('data-size') || '16';
+    if (SVG_ICONS[iconKey]) {
+      el.innerHTML = SVG_ICONS[iconKey].replace(/{s}/g, size);
+    }
+  });
+}
+
+// --- DATA ARRAYS ---
+const NAV_ITEMS = [
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Services', href: '#services' },
+  { label: 'My Work', href: '#portfolio' },
+  { label: 'Education', href: '#education' },
+  { label: 'Contact', href: '#contact' }
+];
+
+const HERO_ROLES = [
+  'Virtual Assistant',
+  'Administrative Support',
+  'Customer & Sales Support',
+  'Travel Virtual Assistant',
+  'Remote Operations Support'
+];
+
+// Experience list incorporating Tribal Warranty between Trevolution and Salma
+const EXPERIENCES = [
+  {
+    role: "Travel Virtual Assistant & Sales Support Specialist",
+    company: "Trevolution Group / Asaptickets",
+    period: "2023 — Present",
+    type: "Remote Support",
+    bullets: [
+      "Provided end-to-end travel arrangement support, booking flights, hotels, and managing itineraries for international clients.",
+      "Handled customer inquiries via email, chat, and phone, resolving schedule changes and booking inquiries efficiently.",
+      "Supported sales pipelines, managing CRM data entries and follow-up communications to maximize conversions."
+    ]
+  },
+  {
+    role: "Administrative & Customer Support Specialist",
+    company: "Tribal Warranty",
+    period: "2022 — 2023",
+    type: "Remote Support",
+    bullets: [
+      "Managed warranty claims processing, administrative documentation, and customer inquiries with high precision.",
+      "Maintained internal databases, processed policy updates, and ensured compliance with service level agreements.",
+      "Drafted detailed reports and communicated claim statuses clearly to clients and internal management teams."
+    ]
+  },
+  {
+    role: "Administrative Assistant & Operations Support",
+    company: "Salma Logistics & Administrative Services",
+    period: "2021 — 2022",
+    type: "On-site / Hybrid Support",
+    bullets: [
+      "Organized executive schedules, coordinated cross-departmental meetings, and managed office correspondence.",
+      "Prepared administrative documentation, compiled data reports, and handled client recordkeeping.",
+      "Assisted with customer onboarding and coordinated vendor communications."
+    ]
+  }
+];
+
+const SKILL_GROUPS = [
+  {
+    category: "Administrative & Operations",
+    items: ["Calendar & Email Management", "Data Entry & Clean-up", "Document Preparation", "Executive Assistance", "SOP & Workflow Documentation"]
+  },
+  {
+    category: "Customer & Sales Support",
+    items: ["CRM Management (Salesforce/HubSpot)", "Inbound/Outbound Email Support", "Order & Claim Processing", "Client Onboarding", "Lead Tracking & Follow-up"]
+  },
+  {
+    category: "Travel & Logistics Support",
+    items: ["Flight & Hotel Bookings", "Itinerary Planning", "Travel Logistics Coordination", "Schedule Reconciliation", "Expense & Receipt Tracking"]
+  },
+  {
+    category: "Research & Communication",
+    items: ["Market & Web Research", "Professional Business Writing", "Cross-cultural Communication", "Diplomatic Problem Solving"]
+  }
+];
+
+const EMERGING_SKILLS = [
+  "Google Workspace", "Microsoft 365", "Slack & Teams", "Asana / Trello", "Canva Support", "Zoom / Google Meet Admin", "AI Productivity Tools (ChatGPT, Claude)"
+];
+
+const SERVICES = [
+  { title: "Administrative Support", desc: "Inbox zero management, calendar scheduling, data organization, document formatting, and day-to-day office coordination." },
+  { title: "Customer & Sales Support", desc: "Prompt email responses, ticket handling, CRM updating, follow-ups, and sales pipeline assistance." },
+  { title: "Travel Virtual Assistance", desc: "End-to-end travel booking, detailed itinerary compilation, schedule adjustments, and logistics support." },
+  { title: "Research & Documentation", desc: "In-depth web research, competitor analysis, report drafting, meeting minutes, and document structuring." }
+];
+
+// Portfolio including JPEGs for Travel, Sales, and Admin support work
+const PORTFOLIO = [
+  {
+    id: "travel-support",
+    title: "Travel Itinerary & Flight Research Support",
+    tag: "Travel Support",
+    image: "assets/work/travel-support.jpg",
+    objective: "Streamline executive travel arrangements, reducing scheduling conflicts and ensuring complete travel documentation.",
+    outcome: "Created standardized travel itinerary templates and organized flight/hotel booking workflows for frictionless business trips.",
+    tools: ["Google Workspace", "Excel", "GDS / Booking Tools", "Canva"],
+    evidence: "assets/work/travel-support.jpeg"
+  },
+  {
+    id: "sales-support",
+    title: "Customer Relationship Management & Lead Follow-up",
+    tag: "Sales Support",
+    image: "assets/work/sales-support.jpg",
+    objective: "Maintain up-to-date customer records and organize outreach schedules for prospective leads.",
+    outcome: "Improved CRM data accuracy by 95% and streamlined follow-up turnaround times.",
+    tools: ["HubSpot CRM", "Salesforce", "Google Sheets", "Email Automation"],
+    evidence: "assets/work/sales-support.jpeg"
+  },
+  {
+    id: "admin-support",
+    title: "Email & Calendar Management",
+    tag: "Administrative Support",
+    image: "assets/work/admin-support.jpg",
+    objective: "Structure digital filing systems, standard operating procedures, and email inbox triage rules.",
+    outcome: "Reduced daily administrative clutter, allowing team leaders to focus on core strategic tasks.",
+    tools: ["Google Drive", "Asana", "MS Word", "Notion"],
+    evidence: "assets/work/admin-support.jpeg"
+  }
+];
+
+const CERTIFICATIONS = [
+  {
+    title: "Independent Travel Manager",
+    issuer: "Dreamport part of Dyninno Group",
+    date: "2026",
+    pdf: "assets/certifications/travel manager.pdf"
+  },
+  {
+    title: "Virtual Assistant Professional Certificate",
+    issuer: "ALX Africa / Remote Skills Institute",
+    date: "2025",
+    pdf: "assets/certifications/virtual assistant.pdf"
+  },
+  {
+    title: "BSc (Honours) Political Science & Diplomacy",
+    issuer: "University of Zimbabwe",
+    date: "Graduated 2.1",
+    pdf: "assets/certifications/degree certificate.pdf"
+  }
+];
+
+const WHY_HIRE = [
+  { title: "Diplomatic & Professional", desc: "Background in Political Science and Diplomacy translates into articulate, composed, and discreet client communications." },
+  { title: "Versatile Experience", desc: "Proven track record across travel, warranty administration, logistics, and sales operations." },
+  { title: "Reliable & Independent", desc: "Thrives in remote environments with minimal supervision, taking full ownership of assigned workflows." }
+];
+
+const WORKFLOW_STEPS = [
+  { step: "01", title: "Discovery", desc: "We discuss your current bottlenecks and support requirements." },
+  { step: "02", title: "Handover", desc: "Share access, guidelines, and priorities in a secure setup." },
+  { step: "03", title: "Execution", desc: "I handle daily tasks with consistent updates and quality check." },
+  { step: "04", title: "Feedback", desc: "Regular check-ins to fine-tune workflows to your exact needs." },
+  { step: "05", title: "Scale Support", desc: "Adjust support hours or tasks as your business grows." }
+];
+
+// --- DOM RENDERING LOGIC ---
+function initNavigation() {
+  const desktopContainer = document.getElementById('nav-links-desktop');
+  const mobileContainer = document.getElementById('nav-links-mobile');
+  
+  NAV_ITEMS.forEach(item => {
+    desktopContainer.innerHTML += `<a href="${item.href}" class="text-sm font-medium transition-colors hover:text-blue-600" style="color:var(--text-secondary)">${item.label}</a>`;
+    mobileContainer.innerHTML += `<a href="${item.href}" class="mobile-nav-link rounded-lg px-3 py-2 text-base font-medium transition-colors" style="color:var(--text)">${item.label}</a>`;
+  });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    const isExpanded = !mobileMenu.classList.contains('hidden');
+    menuToggle.setAttribute('data-icon', isExpanded ? 'x' : 'menu');
+    renderIcons();
+  });
+
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuToggle.setAttribute('data-icon', 'menu');
+      renderIcons();
+    });
+  });
+}
+
+function initThemeToggle() {
+  const updateThemeButtons = () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    const icon = current === 'dark' ? 'sun' : 'moon';
+    ['theme-toggle-desktop', 'theme-toggle-mobile'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.setAttribute('data-icon', icon);
+      }
+    });
+    renderIcons();
+  };
+
+  const toggleTheme = () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('pdk-theme', next); } catch(e){}
+    updateThemeButtons();
+  };
+
+  document.getElementById('theme-toggle-desktop')?.addEventListener('click', toggleTheme);
+  document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleTheme);
+  updateThemeButtons();
+}
+
+function initRoleRotator() {
+  const rotator = document.getElementById('role-rotator');
+  if (!rotator) return;
+  
+  HERO_ROLES.forEach((role, idx) => {
+    const span = document.createElement('span');
+    span.className = 'role-item';
+    span.textContent = role;
+    span.style.opacity = idx === 0 ? '1' : '0';
+    span.style.transform = idx === 0 ? 'translateY(0)' : 'translateY(100%)';
+    rotator.appendChild(span);
+  });
+
+  let currentIdx = 0;
+  setInterval(() => {
+    const items = rotator.querySelectorAll('.role-item');
+    if (!items.length) return;
+    
+    items[currentIdx].style.opacity = '0';
+    items[currentIdx].style.transform = 'translateY(-100%)';
+    
+    currentIdx = (currentIdx + 1) % items.length;
+    
+    items[currentIdx].style.opacity = '1';
+    items[currentIdx].style.transform = 'translateY(0)';
+  }, 3000);
+}
+
+function renderExperience() {
+  const list = document.getElementById('experience-list');
+  if (!list) return;
+  list.innerHTML = EXPERIENCES.map((exp, idx) => `
+    <li class="relative pl-7 sm:pl-9 reveal">
+      <div aria-hidden="true" class="absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full border-2" style="background-color:var(--bg);border-color:var(--accent)"></div>
+      <div class="card-surface rounded-2xl p-6 sm:p-7">
+        <div class="flex flex-wrap items-start justify-between gap-2">
+          <div>
+            <h3 class="font-display text-lg sm:text-xl font-semibold" style="color:var(--text)">${exp.role}</h3>
+            <p class="mt-0.5 text-sm font-medium" style="color:var(--accent)">${exp.company}</p>
+          </div>
+          <div class="text-right">
+            <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold" style="background-color:var(--bg-secondary);color:var(--text-muted);border:1px solid var(--border)">${exp.period}</span>
+            <p class="mt-1 text-xs" style="color:var(--text-muted)">${exp.type}</p>
+          </div>
+        </div>
+        <ul class="mt-4 space-y-2 text-sm leading-relaxed" style="color:var(--text-secondary)">
+          ${exp.bullets.map(b => `<li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full" style="background-color:var(--accent)"></span><span>${b}</span></li>`).join('')}
+        </ul>
+      </div>
+    </li>
+  `).join('');
+}
+
+function renderSkills() {
+  const groupsContainer = document.getElementById('skills-groups');
+  if (groupsContainer) {
+    groupsContainer.innerHTML = SKILL_GROUPS.map(g => `
+      <div class="card-surface reveal rounded-2xl p-6">
+        <h3 class="font-display text-lg font-semibold" style="color:var(--text)">${g.category}</h3>
+        <ul class="mt-4 space-y-2">
+          ${g.items.map(item => `
+            <li class="flex items-center gap-2 text-sm" style="color:var(--text-secondary)">
+              <span class="h-1.5 w-1.5 rounded-full" style="background-color:var(--accent)"></span>
+              ${item}
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+    `).join('');
+  }
+
+  const emergingContainer = document.getElementById('emerging-skills');
+  if (emergingContainer) {
+    emergingContainer.innerHTML = EMERGING_SKILLS.map(s => `
+      <span class="rounded-full px-3.5 py-1.5 text-xs font-medium" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text-secondary)">${s}</span>
+    `).join('');
+  }
+}
+
+function renderServices() {
+  const grid = document.getElementById('services-grid');
+  const select = document.getElementById('service-select');
+  if (!grid) return;
+
+  grid.innerHTML = SERVICES.map(s => `
+    <div class="card-surface reveal flex flex-col justify-between rounded-2xl p-6 transition-transform hover:-translate-y-1">
+      <div>
+        <h3 class="font-display text-lg font-semibold" style="color:var(--text)">${s.title}</h3>
+        <p class="mt-3 text-sm leading-relaxed" style="color:var(--text-muted)">${s.desc}</p>
+      </div>
+      <a href="#contact" onclick="document.getElementById('service-select').value='${s.title}'" class="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold hover:underline" style="color:var(--accent)">
+        Request Service <span class="icon" data-icon="arrow-right" data-size="12"></span>
+      </a>
+    </div>
+  `).join('');
+
+  if (select) {
+    select.innerHTML = SERVICES.map(s => `<option>${s.title}</option>`).join('') + `<option>General Administrative Support</option>`;
+  }
+}
+
+function renderPortfolio() {
+  const grid = document.getElementById('portfolio-grid');
+  if (!grid) return;
+
+  grid.innerHTML = PORTFOLIO.map(p => `
+    <div class="card-surface reveal group overflow-hidden rounded-2xl cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg" onclick="openProjectModal('${p.id}')">
+      <div class="aspect-[16/9] overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+        <img src="${p.image}" alt="${p.title}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/600x337/2563EB/FFFFFF?text=${encodeURIComponent(p.tag)}';" />
+        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+          <span class="rounded-full bg-white/90 dark:bg-slate-900/90 px-3.5 py-1.5 text-xs font-semibold text-slate-900 dark:text-white shadow">View Work Sample</span>
+        </div>
+      </div>
+      <div class="p-6">
+        <span class="inline-block rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide" style="background-color:color-mix(in srgb, var(--accent) 15%, transparent);color:var(--accent)">${p.tag}</span>
+        <h3 class="font-display mt-2 text-lg font-semibold leading-snug" style="color:var(--text)">${p.title}</h3>
+        <p class="mt-2 text-xs line-clamp-2" style="color:var(--text-muted)">${p.objective}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openProjectModal(id) {
+  const project = PORTFOLIO.find(p => p.id === id);
+  if (!project) return;
+
+  document.getElementById('project-modal-title').textContent = project.title;
+  document.getElementById('project-modal-tag').textContent = project.tag;
+  document.getElementById('project-modal-objective').textContent = project.objective;
+  document.getElementById('project-modal-outcome').textContent = project.outcome;
+  
+  const imgContainer = document.getElementById('project-modal-image');
+  imgContainer.innerHTML = `<img src="${project.image}" alt="${project.title}" class="h-full w-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x337/2563EB/FFFFFF?text=${encodeURIComponent(project.tag)}';" />`;
+
+  const toolsContainer = document.getElementById('project-modal-tools');
+  toolsContainer.innerHTML = project.tools.map(t => `<span class="rounded-full px-2.5 py-1 text-xs" style="background-color:var(--bg-secondary);border:1px solid var(--border);color:var(--text-secondary)">${t}</span>`).join('');
+
+  const evidenceBtn = document.getElementById('project-modal-evidence');
+  if (project.evidence) {
+    evidenceBtn.href = project.evidence;
+    evidenceBtn.classList.add('has-link');
+  } else {
+    evidenceBtn.classList.remove('has-link');
+  }
+
+  const modal = document.getElementById('project-modal');
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+}
+
+function initProjectModal() {
+  const modal = document.getElementById('project-modal');
+  const closeBtn = document.getElementById('project-modal-close');
+  
+  const closeModal = () => {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  };
+
+  closeBtn?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+}
+
+function renderCertifications() {
+  const grid = document.getElementById('certifications-grid');
+  if (!grid) return;
+
+  grid.innerHTML = CERTIFICATIONS.map(c => `
+    <div class="card-surface reveal flex flex-col justify-between rounded-2xl p-5">
+      <div>
+        <div class="flex items-center gap-2" style="color:var(--accent)">
+          <span class="icon" data-icon="award" data-size="20"></span>
+          <span class="text-xs font-semibold uppercase tracking-wider">${c.issuer}</span>
+        </div>
+        <h4 class="font-display mt-3 text-base font-semibold" style="color:var(--text)">${c.title}</h4>
+      </div>
+      <div class="mt-5 flex items-center justify-between border-t pt-4" style="border-color:var(--border)">
+        <span class="text-xs" style="color:var(--text-muted)">${c.date}</span>
+        <a href="${c.pdf}" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-white transition-opacity hover:opacity-90" style="background-color:var(--accent)">
+          <span class="icon" data-icon="file-text" data-size="13"></span> View PDF
+        </a>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderEducation() {
+  const grid = document.getElementById('education-grid');
+  if (!grid) return;
+
+  grid.innerHTML = `
+    <div class="card-surface reveal rounded-2xl p-6 sm:p-7">
+      <span class="text-xs font-semibold uppercase tracking-wider" style="color:var(--accent)">Degree</span>
+      <h3 class="font-display mt-2 text-xl font-semibold" style="color:var(--text)">BSc (Honours) in Political Science and Diplomacy</h3>
+      <p class="mt-1 text-sm font-medium" style="color:var(--text-secondary)">University of Zimbabwe</p>
+      <p class="mt-4 text-sm leading-relaxed" style="color:var(--text-muted)">Developed strong capabilities in qualitative research, strategic communication, policy documentation, and international relations.</p>
+    </div>
+    <div class="card-surface reveal rounded-2xl p-6 sm:p-7">
+      <span class="text-xs font-semibold uppercase tracking-wider" style="color:var(--accent)">Professional Approach</span>
+      <h3 class="font-display mt-2 text-xl font-semibold" style="color:var(--text)">Diplomatic & Analytical Mindset</h3>
+      <p class="mt-1 text-sm font-medium" style="color:var(--text-secondary)">Applied to Executive & Administrative Support</p>
+      <p class="mt-4 text-sm leading-relaxed" style="color:var(--text-muted)">Combines academic discipline with practical Virtual Assistant methodologies to ensure reliable, high-level administrative delivery.</p>
+    </div>
+  `;
+}
+
+function renderWhyHire() {
+  const grid = document.getElementById('why-grid');
+  if (!grid) return;
+
+  grid.innerHTML = WHY_HIRE.map(w => `
+    <div class="card-surface reveal rounded-2xl p-6">
+      <h3 class="font-display text-lg font-semibold" style="color:var(--text)">${w.title}</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--text-muted)">${w.desc}</p>
+    </div>
+  `).join('');
+}
+
+function renderWorkflow() {
+  const grid = document.getElementById('workflow-grid');
+  if (!grid) return;
+
+  grid.innerHTML = WORKFLOW_STEPS.map(s => `
+    <div class="card-surface reveal relative rounded-2xl p-6">
+      <span class="font-display text-2xl font-bold opacity-30" style="color:var(--accent)">${s.step}</span>
+      <h3 class="font-display mt-2 text-base font-semibold" style="color:var(--text)">${s.title}</h3>
+      <p class="mt-2 text-xs leading-relaxed" style="color:var(--text-muted)">${s.desc}</p>
+    </div>
+  `).join('');
+}
+
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('contact-status');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const company = formData.get('company') || 'N/A';
+    const method = formData.get('contactMethod');
+    const service = formData.get('service');
+    const message = formData.get('message');
+
+    const formattedMessage = `Hi Promise,\n\nName: ${name}\nEmail: ${email}\nCompany: ${company}\nService Requested: ${service}\n\nMessage:\n${message}`;
+
+    if (method === 'WhatsApp') {
+      window.open(`https://wa.me/263776768932?text=${encodeURIComponent(formattedMessage)}`, '_blank');
+    } else if (method === 'LinkedIn') {
+      window.open(`https://www.linkedin.com/in/promise-kaparadza-93b70a20b`, '_blank');
+    } else {
+      window.open(`mailto:promisedexterkaparadza@gmail.com?subject=${encodeURIComponent(`Portfolio Inquiry from ${name}`)}&body=${encodeURIComponent(formattedMessage)}`, '_blank');
+    }
+
+    if (status) {
+      status.classList.remove('hidden');
+    }
+  });
+}
+
+function initScrollReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+// --- INITIALIZATION ---
+window.onload = function() {
+  initNavigation();
+  initThemeToggle();
+  initRoleRotator();
+  renderExperience();
+  renderSkills();
+  renderServices();
+  renderPortfolio();
+  initProjectModal();
+  renderEducation();
+  renderCertifications();
+  renderWhyHire();
+  renderWorkflow();
+  initContactForm();
+  renderIcons();
+  
+  // Initialize scroll reveal after elements are rendered into the DOM
+  setTimeout(initScrollReveal, 100);
+};
+</script>
+</body>
+</html>
