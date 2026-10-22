@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Promise Dexter Kaparadza — Virtual Assistant & Administrative Support</title>
-<meta name="description" content="Promise Dexter Kaparadza is a remote Virtual Assistant offering administrative support, customer & sales support, and travel assistance for entrepreneurs, executives, and growing businesses." />
+<title>Promise Dexter Kaparadza — AI Workflows & Business Support</title>
+<meta name="description" content="Promise Dexter Kaparadza combines practical virtual assistance, business operations support, and AI workflow automation for entrepreneurs and growing teams." />
 <meta name="keywords" content="Promise Dexter Kaparadza, Virtual Assistant, Administrative Assistant, Customer Support , Sales Support Assistant, Travel Virtual Assistant, Remote Operations Support" />
 <meta name="author" content="Promise Dexter Kaparadza" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Promise Dexter Kaparadza — Virtual Assistant & Administrative Support" />
-<meta property="og:description" content="Reliable remote support for entrepreneurs, executives, and growing businesses — administration, customer & sales support, and travel coordination." />
+<meta property="og:title" content="Promise Dexter Kaparadza — AI Workflows & Business Support" />
+<meta property="og:description" content="Human-centered business support, AI workflow automation, and practical virtual assistance for growing businesses." />
 <meta property="og:image" content="https://placehold.co/1200x630/2563EB/FFFFFF?text=Promise+Dexter+Kaparadza" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Promise Dexter Kaparadza — Virtual Assistant" />
-<meta name="twitter:description" content="administrative assistant, customer & sales support, and travel assistance for remote-first businesses." />
+<meta name="twitter:description" content="AI workflow automation, virtual assistance, and business operations support for growing businesses." />
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563EB'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='600' fill='%23FFFFFF' text-anchor='middle'%3EPD%3C/text%3E%3C/svg%3E" />
 
@@ -37,14 +37,14 @@
 <style>
   :root[data-theme="light"] {
     --bg: #FFFFFF;
-    --bg-secondary: #F8FAFC;
+    --bg-secondary: #F4F6F8;
     --card: #FFFFFF;
-    --accent: #2563EB;
-    --accent-2: #7C3AED;
-    --text: #0F172A;
-    --text-secondary: #334155;
-    --text-muted: #64748B;
-    --border: #E2E8F0;
+    --accent: #E29A38;
+    --accent-2: #18324B;
+    --text: #142A40;
+    --text-secondary: #33485E;
+    --text-muted: #647487;
+    --border: #D8E0E7;
     --shadow: 0 1px 2px rgba(15,23,42,.04), 0 12px 32px -16px rgba(15,23,42,.12);
     --overlay: rgba(15,23,42,.55);
   }
@@ -52,8 +52,8 @@
     --bg: #07111F;
     --bg-secondary: #0B1728;
     --card: #0D1B2A;
-    --accent: #38BDF8;
-    --accent-2: #818CF8;
+    --accent: #E7A447;
+    --accent-2: #18324B;
     --text: #F8FAFC;
     --text-secondary: #CBD5E1;
     --text-muted: #94A3B8;
@@ -72,7 +72,7 @@
     transition: background-color .35s ease, color .35s ease;
     overflow-x: hidden;
   }
-  .font-display { font-family: 'Fraunces', 'Iowan Old Style', serif; }
+  .font-display { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
   ::selection { background: var(--accent); color: #fff; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
   .container-page { max-width: 1180px; margin-inline: auto; padding-inline: 1.5rem; }
@@ -120,6 +120,60 @@
     font-style: italic; color: var(--accent);
     transition: transform .5s cubic-bezier(.22,1,.36,1), opacity .5s cubic-bezier(.22,1,.36,1);
   }
+
+  /* Reference direction: clean white canvas, deep navy, and warm amber accents. */
+  #navbar { --text:#142A40; --text-secondary:#33485E; --text-muted:#647487; --border:#D8E0E7; background: rgba(255,255,255,.97) !important; box-shadow: 0 1px 0 rgba(20,42,64,.08); }
+  #home {
+    --text: #fff; --text-secondary: #E0E7ED; --text-muted: #C6D0DA;
+    --bg-secondary: rgba(255,255,255,.1); --border: rgba(255,255,255,.28); --card: #18324B;
+    position: relative; isolation: isolate; min-height: 630px; padding-top: 7.5rem; padding-bottom: 4rem;
+    background: linear-gradient(90deg, rgba(13,31,49,.97) 0%, rgba(13,31,49,.91) 42%, rgba(13,31,49,.45) 100%), #142A40;
+  }
+  #home::before { content:""; position:absolute; inset:0 0 0 42%; z-index:-1; background:linear-gradient(90deg, rgba(20,42,64,.35), rgba(20,42,64,.1)); pointer-events:none; }
+  #home > .container-page { min-height: 480px; }
+  #home h1 { max-width: 760px; font-size: clamp(2.35rem, 3.7vw, 3.6rem); line-height: 1.02; font-weight: 800; letter-spacing: -.055em; text-transform: uppercase; }
+  #home h1 .hero-highlight { color: var(--accent); }
+  #home .hero-eyebrow { color:#F0A941 !important; background:transparent !important; border:0 !important; padding:0 !important; text-transform:uppercase; font-size:.95rem !important; font-weight:750; line-height:1.4; letter-spacing:.08em; }
+  #home .hero-eyebrow .h-1\.5 { background:#F0A941 !important; }
+  #home .hero-visual { align-self:stretch; min-height:440px; max-width:none; width:100%; aspect-ratio:auto; margin:0; }
+  #home .hero-visual > img, #home .hero-visual > #profile-fallback { height:100%; border-radius:4px !important; object-position:center; }
+  #home .hero-visual > img { min-height:440px; }
+  #home .hero-visual > div[aria-hidden="true"] { display:none; }
+  #home a[href="#portfolio"] { border-color:rgba(255,255,255,.7) !important; color:#fff !important; }
+  #home .hero-cta-row a { padding-inline:1rem !important; }
+  a[style*="background-color:var(--accent)"], a[style*="background:var(--accent)"], button[style*="background-color:var(--accent)"], button[style*="background:var(--accent)"] { color:#142A40 !important; }
+  #home a[download], #home a[target="_blank"][href="assets/cv.pdf"] { color:#E0E7ED !important; }
+  #home .card-surface { background:#18324B; border-color:rgba(255,255,255,.22); }
+  #service-highlights { background:#fff; border-bottom:1px solid var(--border); }
+  #service-highlights .highlight-item { min-height:76px; display:flex; align-items:center; justify-content:center; gap:.7rem; padding:1rem; border-right:1px solid var(--border); color:#142A40; font-size:.9rem; font-weight:650; }
+  #service-highlights .highlight-item:last-child { border-right:0; }
+  #service-highlights .highlight-icon { color:#315F83; font-size:1.1rem; }
+  #services-grid h3 { font-size:1rem !important; line-height:1.4 !important; }
+  #services-grid p { font-size:.875rem !important; line-height:1.65 !important; }
+  #services-grid > div { border-radius:8px !important; }
+  #portfolio, #skills { background:var(--bg-secondary) !important; }
+  footer { background:#142A40 !important; border-color:#E29A38 !important; border-top-width:3px !important; }
+  footer p, footer a { color:#D5DEE7 !important; }
+  #dx-box { height:min(560px, calc(100dvh - 100px)); max-height:calc(100dvh - 100px); }
+  #dx-in { max-height:44%; overflow-y:auto; overscroll-behavior:contain; }
+  .dx-chips { max-height:34dvh; overflow-y:auto; overscroll-behavior:contain; padding-right:3px; }
+  .dx-chip { padding:7px 10px !important; font-size:12.5px !important; line-height:1.3 !important; border-width:1px !important; border-radius:8px !important; }
+  .dx-m { font-size:14px; }
+  @media (max-width: 767px) {
+    #home { min-height:unset; padding-top:7.25rem; padding-bottom:3rem; }
+    #home > .container-page { min-height:unset; gap:2rem; }
+    #home h1 { font-size:clamp(2.25rem, 8vw, 3rem); }
+    #home .hero-eyebrow { font-size:.9rem !important; letter-spacing:.06em; }
+    #home .hero-visual { min-height:300px; max-width:360px; }
+    #home .hero-visual > img { min-height:300px; max-height:420px; }
+    #service-highlights .highlight-item { min-height:60px; justify-content:flex-start; border-right:0; border-bottom:1px solid var(--border); padding:.8rem 0; }
+  }
+  @media (max-width: 420px) {
+    #dx-box { right:12px; width:calc(100vw - 24px); max-height:calc(100dvh - 90px); }
+    #dx-launcher { right:14px; bottom:max(14px, env(safe-area-inset-bottom)); }
+    #dx-in { max-height:42%; }
+    .dx-chips { max-height:31dvh; }
+  }
 </style>
 </head>
 
@@ -160,13 +214,13 @@
 
   <div class="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
     <div class="reveal">
-      <span class="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide" style="background-color:var(--bg-secondary);color:var(--text-secondary);border:1px solid var(--border)">
+      <span class="hero-eyebrow inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold tracking-wide" style="background-color:var(--bg-secondary);color:var(--text-secondary);border:1px solid var(--border)">
         <span class="h-1.5 w-1.5 rounded-full" style="background-color:var(--accent)"></span>
-        Welcome to my personal portfolio
+        PROMISE DEXTER KAPARADZA
       </span>
 
       <h1 class="font-display mt-6 text-[2.6rem] leading-[1.05] font-semibold tracking-tight text-balance sm:text-5xl md:text-6xl" style="color:var(--text)">
-        Hi, I'm Promise Dexter Kaparadza.
+        MAKE ROOM<br /><span class="hero-highlight">FOR WHAT MATTERS.</span>
       </h1>
 
       <p class="mt-3 text-lg font-medium sm:text-2xl md:text-[1.7rem]" style="color:var(--text-secondary)">
@@ -174,12 +228,12 @@
       </p>
 
       <p class="mt-6 max-w-xl text-base leading-relaxed sm:text-lg" style="color:var(--text-muted)">
-        I help businesses and professionals stay organized, responsive, and productive by supporting the administrative, customer service, sales, research, travel, and day-to-day tasks that keep work moving.
+        I pair dependable virtual assistance with practical AI workflows—helping people stay responsive, organized, and focused on the work that needs their judgment.
       </p>
 
-      <div class="mt-9 flex flex-wrap items-center gap-3.5">
-        <a href="#contact" class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5" style="background-color:var(--accent)">
-          Hire Me <span class="icon" data-icon="arrow-right" data-size="16"></span>
+      <div class="hero-cta-row mt-8 flex flex-wrap items-center gap-2">
+        <a href="#contact" onclick="document.getElementById('dx-launcher').click(); return false;" class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5" style="background-color:var(--accent)">
+          Start a Chat <span class="icon" data-icon="message-circle" data-size="16"></span>
         </a>
         <a href="#portfolio" class="inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition-transform hover:-translate-y-0.5" style="border:1px solid var(--border);color:var(--text)">
           View My Work
@@ -194,10 +248,6 @@
 
       <div class="mt-9 flex flex-wrap items-center gap-5">
         <span class="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium" style="background-color:color-mix(in srgb, var(--accent) 12%, transparent);color:var(--accent)">
-          <span class="relative flex h-2 w-2">
-            <span class="absolute inline-flex h-full w-full animate-ping-slow rounded-full opacity-60" style="background-color:var(--accent)"></span>
-            <span class="relative inline-flex h-2 w-2 rounded-full" style="background-color:var(--accent)"></span>
-          </span>
           Available for Remote Opportunities
         </span>
 
@@ -209,7 +259,7 @@
       </div>
     </div>
 
-    <div class="reveal relative mx-auto aspect-[4/5] w-full max-w-sm">
+    <div class="hero-visual reveal relative mx-auto aspect-[4/5] w-full max-w-sm">
       <div aria-hidden="true" class="absolute -inset-4 -z-10 rounded-[2.4rem]" style="border:1px solid var(--border)"></div>
       <div aria-hidden="true" class="absolute -right-6 -top-6 -z-10 h-24 w-24 rounded-full" style="background-color:color-mix(in srgb, var(--accent-2) 18%, transparent)"></div>
       <div aria-hidden="true" class="absolute -bottom-8 -left-6 -z-10 h-32 w-32 rounded-full blur-2xl" style="background-color:color-mix(in srgb, var(--accent) 25%, transparent)"></div>
@@ -227,14 +277,23 @@
   </div>
 </section>
 
+<section id="service-highlights" aria-label="Areas of support">
+  <div class="container-page grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="highlight-item"><span class="highlight-icon" aria-hidden="true">✦</span>AI workflows &amp; automation</div>
+    <div class="highlight-item"><span class="highlight-icon" aria-hidden="true">▤</span>Administrative support</div>
+    <div class="highlight-item"><span class="highlight-icon" aria-hidden="true">↗</span>CRM &amp; client follow-up</div>
+    <div class="highlight-item"><span class="highlight-icon" aria-hidden="true">◎</span>Research &amp; travel support</div>
+  </div>
+</section>
+
 <!-- ============================= ABOUT ============================= -->
 <section id="about" class="section-pad bg-secondary">
   <div class="container-page grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
     <div class="reveal">
-      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">About Me</h2>
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">People-first support. Practical automation.</h2>
       <div class="mt-6 space-y-4">
-        <p class="text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">I'm a Virtual Assistant and administrative support professional with experience across business operations, customer communication, sales support, travel reservations, research, and documentation. I combine practical work experience with strong organization, communication, and attention to detail to help clients stay focused on their priorities.</p>
-        <p class="text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">I hold a BSc (Honours) in Political Science and Diplomacy from the University of Zimbabwe, which shaped how I work day to day: careful research, clear writing, structured thinking, and staying calm when there's a lot going on at once. I bring that same approach to inboxes, calendars, CRMs, and client conversations.</p>
+        <p class="text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">I bring order to busy days—and thoughtful automation to repetitive work. I support administration, customer and sales operations, travel coordination, and research. I combine dependable follow-through with practical AI and workflow tools to help teams stay responsive and make more room for the work that matters.</p>
+        <p class="text-base leading-relaxed sm:text-lg" style="color:var(--text-secondary)">I hold a BSc (Honours) in Political Science and Diplomacy from the University of Zimbabwe. It strengthened the skills I bring to every project: careful research, clear communication, structured thinking, and a calm, considered approach when priorities shift.</p>
       </div>
     </div>
 
@@ -264,17 +323,14 @@
   </div>
 </section>
 
-<!-- ============================= EXPERIENCE ============================= -->
-<section id="experience" class="section-pad">
+<!-- ============================= RECENT PROJECTS ============================= -->
+<section id="projects" class="section-pad">
   <div class="container-page">
     <div class="max-w-2xl reveal">
-      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Experience</h2>
-      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Where I've supported operations, sales, customers, and travel — remote and on-site.</p>
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Selected Projects</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Recent work bringing together clear communication, thoughtful customer journeys, and practical automation.</p>
     </div>
-    <div class="relative mt-12">
-      <div aria-hidden="true" class="absolute left-[7px] top-2 bottom-2 w-px sm:left-[9px]" style="background-color:var(--border)"></div>
-      <ol class="space-y-10" id="experience-list"></ol>
-    </div>
+    <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3" id="projects-grid"></div>
   </div>
 </section>
 
@@ -282,12 +338,12 @@
 <section id="skills" class="section-pad bg-secondary">
   <div class="container-page">
     <div class="max-w-2xl reveal">
-      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Skills</h2>
-      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">The tools and areas I work in most, grouped by what they're used for.</p>
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Skills &amp; Tools</h2>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">The practical skills and platforms I use to support day-to-day operations and improve workflows.</p>
     </div>
     <div class="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2" id="skills-groups"></div>
     <div class="card-surface reveal mt-5 rounded-2xl p-6 sm:p-7">
-      <h3 class="font-display text-lg font-semibold" style="color:var(--text)">Technology & Emerging Skills</h3>
+      <h3 class="font-display text-lg font-semibold" style="color:var(--text)">Tools &amp; Platforms</h3>
       <div class="mt-4 flex flex-wrap gap-2.5" id="emerging-skills"></div>
     </div>
   </div>
@@ -300,7 +356,7 @@
       <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">Services</h2>
       <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Ways I can take work off your plate, depending on what's piling up.</p>
     </div>
-    <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4" id="services-grid"></div>
+    <div class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" id="services-grid"></div>
   </div>
 </section>
 
@@ -309,9 +365,20 @@
   <div class="container-page">
     <div class="max-w-2xl reveal">
       <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl" style="color:var(--text)">My Work</h2>
-      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">A selection of projects demonstrating how I organize information, support clients, and improve day-to-day workflows.</p>
+      <p class="mt-3 text-base sm:text-lg" style="color:var(--text-muted)">Browse examples of my business support work and AI workflows. I only show project evidence that is available to share.</p>
     </div>
-    <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="portfolio-grid"></div>
+    <div class="mt-6 flex flex-wrap gap-2" role="group" aria-label="Filter work samples">
+      <button type="button" class="portfolio-filter rounded-full px-4 py-2 text-sm font-semibold" data-filter="all" style="background:var(--accent);color:#fff">All work</button>
+      <button type="button" class="portfolio-filter rounded-full px-4 py-2 text-sm font-semibold" data-filter="AI Workflow" style="border:1px solid var(--border);color:var(--text)">AI Workflows</button>
+      <button type="button" class="portfolio-filter rounded-full px-4 py-2 text-sm font-semibold" data-filter="support" style="border:1px solid var(--border);color:var(--text)">Business Support</button>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" id="portfolio-grid"></div>
+    <div id="ai-workflows-empty" class="card-surface mt-6 hidden rounded-2xl p-7" style="border-style:dashed">
+      <p class="text-xs font-semibold uppercase tracking-wide" style="color:var(--accent)">AI Workflows</p>
+      <h3 class="font-display mt-2 text-xl font-semibold" style="color:var(--text)">Workflow examples coming soon</h3>
+      <p class="mt-2 text-sm leading-relaxed" style="color:var(--text-muted)">I’m building this portfolio category as I prepare examples that are ready to share. Ask me about a workflow you have in mind and we can discuss it.</p>
+      <a href="#contact" onclick="document.getElementById('dx-launcher').click(); return false;" class="mt-4 inline-flex rounded-full px-4 py-2 text-sm font-semibold text-white" style="background:var(--accent)">Discuss an automation</a>
+    </div>
   </div>
 </section>
 
@@ -420,41 +487,13 @@
       </div>
     </div>
 
-    <form id="contact-form" class="card-surface reveal rounded-2xl p-6 sm:p-8">
-      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <label class="block">
-          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Name</span>
-          <input required type="text" name="name" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" />
-        </label>
-        <label class="block">
-          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Email</span>
-          <input required type="email" name="email" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" />
-        </label>
-        <label class="block">
-          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Company</span>
-          <input type="text" name="company" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" />
-        </label>
-        <label class="block">
-          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Preferred Contact Method</span>
-          <select name="contactMethod" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)">
-            <option>Email</option><option>WhatsApp</option><option>LinkedIn</option>
-          </select>
-        </label>
-        <label class="block sm:col-span-2">
-          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Service Needed</span>
-          <select name="service" class="mt-1.5 w-full rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)" id="service-select"></select>
-        </label>
-        <label class="block sm:col-span-2">
-          <span class="text-xs font-semibold" style="color:var(--text-secondary)">Message</span>
-          <textarea required rows="4" name="message" class="mt-1.5 w-full resize-none rounded-lg px-3.5 py-2.5 text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500" style="background-color:var(--bg);border:1px solid var(--border);color:var(--text)"></textarea>
-        </label>
-      </div>
-      <p class="mt-4 text-xs leading-relaxed" style="color:var(--text-muted)">When you submit this form, your preferred contact method will open with your message prepared. No information is stored on this static website.</p>
-      <button type="submit" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white shadow-md transition-transform hover:-translate-y-0.5 sm:w-auto" style="background-color:var(--accent)">
-        <span class="icon" data-icon="send" data-size="15"></span> Let's Work Together
-      </button>
-      <p class="mt-3 text-xs hidden" id="contact-status" style="color:var(--text-muted)">Your preferred contact option has been opened with your message prepared. Complete the send/message step in the app that opens.</p>
-    </form>
+    <div class="card-surface reveal rounded-2xl p-6 sm:p-8">
+      <span class="inline-flex rounded-full px-3 py-1 text-xs font-semibold" style="background:color-mix(in srgb, var(--accent) 12%, transparent);color:var(--accent)">A simple first step</span>
+      <h3 class="font-display mt-4 text-2xl font-semibold" style="color:var(--text)">Tell me what you need help with</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--text-secondary)">Dexter, my assistant, will collect a few details about your project and send them to me. I’ll follow up using your preferred contact details. For a direct conversation, email or WhatsApp me instead.</p>
+      <button type="button" onclick="document.getElementById('dx-launcher').click();" class="mt-6 inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white" style="background:var(--accent)"><span class="icon" data-icon="message-circle" data-size="16"></span> Chat with Dexter</button>
+      <p class="mt-4 text-xs" style="color:var(--text-muted)">This assistant gathers project enquiries; Promise will respond personally.</p>
+    </div>
   </div>
 </section>
 
@@ -529,7 +568,7 @@ function renderIcons() {
 // --- DATA ARRAYS ---
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Services', href: '#services' },
   { label: 'My Work', href: '#portfolio' },
@@ -538,78 +577,79 @@ const NAV_ITEMS = [
 ];
 
 const HERO_ROLES = [
-  'Virtual Assistant',
-  'Administrative Support',
-  'Customer & Sales Support',
-  'Travel Virtual Assistant',
-  'Remote Operations Support'
+  'AI Workflow Automation',
+  'Virtual & Administrative Support',
+  'Customer & Sales Operations',
+  'Travel & Research Support'
 ];
 
-// Experience list incorporating Tribal Warranty between Trevolution and Salma
-const EXPERIENCES = [
+const PROJECTS = [
   {
-    role: "Travel Manager & Sales Support Specialist",
-    company: "Trevolution Group - Skylux Travel/Asaptickets",
-    period: "March 2026 — June 2026",
-    type: "Remote Support",
-    bullets: [
-      "Provided end-to-end travel arrangement support, booking flights, hotels, and managing itineraries for international clients.",
-      "Handled customer inquiries via email, chat, and phone, resolving schedule changes and booking inquiries efficiently.",
-      "Supported sales pipelines, managing CRM data entries and follow-up communications to maximize conversions."
+    title: "Personal Portfolio & Client Intake Assistant",
+    type: "Website · n8n intake",
+    summary: "Reshaped my portfolio around virtual assistance and practical workflow automation, with a chat-led enquiry path connected to my production n8n webhook.",
+    points: [
+      "Organized services, project examples, and contact options into a clear responsive site.",
+      "Added an assistant flow that gathers a client's needs and contact details.",
+      "Included a review step before the enquiry is sent for personal follow-up."
     ]
   },
   {
-    role: "Administrative & Customer Support Specialist",
-    company: "Tribal Warranty",
-    period: "November 2025 — January 2026",
-    type: "Remote Support",
-    bullets: [
-      "Managed warranty claims processing, administrative documentation, and customer inquiries with high precision.",
-      "Maintained internal databases, processed policy updates, and ensured compliance with service level agreements.",
-      "Drafted detailed reports and communicated claim statuses clearly to clients and internal management teams."
+    title: "Freight Website & Quote Journey",
+    type: "Website · customer journey",
+    summary: "Designed a responsive logistics website that makes transport, clearance, coverage, and the quote process easy to understand.",
+    stages: [
+      "Share shipment details.",
+      "Receive a quote and confirm arrangements.",
+      "Coordinate collection, transport, and paperwork.",
+      "Send progress updates during the move.",
+      "Confirm delivery and hand over."
     ]
   },
   {
-    role: "Administrative Assistant & Operations Support",
-    company: "Salma Technology",
-    period: "May 2023 — November 2025",
-    type: "On-site / Hybrid Support",
-    bullets: [
-      "Organized executive schedules, coordinated cross-departmental meetings, and managed office correspondence.",
-      "Prepared administrative documentation, compiled data reports, and handled client recordkeeping.",
-      "Assisted with customer onboarding and coordinated vendor communications."
+    title: "Five-Step Email Triage Workflow",
+    type: "n8n · workflow prototype",
+    summary: "Mapped an inbox workflow that sorts routine enquiries while keeping unclear messages in a human review path.",
+    stages: [
+      "Watch an inbox for new email.",
+      "Extract sender, subject, message, and received time; classify the request.",
+      "Flag unclear, general, or malformed messages for review.",
+      "Log review-needed messages to a Google Sheet.",
+      "Send a short acknowledgement for clear, classified messages."
     ]
   }
 ];
 
 const SKILL_GROUPS = [
   {
+    category: "Workflow & Process Support",
+    items: ["Workflow mapping and documentation", "n8n intake workflow project", "Zapier and Make workflow practice", "Google Workspace support", "AI workflow development (ongoing)"]
+  },
+  {
     category: "Administrative & Operations",
-    items: ["Calendar & Email Management", "Data Entry & Clean-up", "Document Preparation", "Executive Assistance", "SOP & Workflow Documentation"]
+    items: ["Calendar and inbox coordination", "Data entry and record accuracy", "Document preparation", "Schedule and task coordination", "Trello task tracking"]
   },
   {
     category: "Customer & Sales Support",
-    items: ["CRM Management (Salesforce/HubSpot)", "Inbound/Outbound Email Support", "Order & Claim Processing", "Client Onboarding", "Lead Tracking & Follow-up"]
+    items: ["CRM and spreadsheet record keeping", "Customer enquiries and follow-up", "Lead tracking", "Client communication", "Sales and operations support"]
   },
   {
-    category: "Travel & Logistics Support",
-    items: ["Flight & Hotel Bookings", "Itinerary Planning", "Travel Logistics Coordination", "Schedule Reconciliation", "Expense & Receipt Tracking"]
-  },
-  {
-    category: "Research & Communication",
-    items: ["Market & Web Research", "Professional Business Writing", "Cross-cultural Communication", "Diplomatic Problem Solving"]
+    category: "Research, Travel & Communication",
+    items: ["Web and market research", "Business writing and reporting", "Travel route and fare research", "Itinerary and schedule checks", "Clear cross-cultural communication"]
   }
 ];
 
 const EMERGING_SKILLS = [
-  "Google Workspace", "Microsoft 365", "Slack & Teams", "Asana / Trello", "Canva Support", "Zoom / Google Meet Admin", "AI Productivity Tools (ChatGPT, Claude)"
+  "Google Workspace", "Microsoft Office", "CRM systems", "Trello", "Zapier", "Make", "n8n (workflow projects)"
 ];
 
 const SERVICES = [
-  { title: "Administrative Support", desc: "Inbox zero management, calendar scheduling, data organization, document formatting, and day-to-day office coordination." },
-  { title: "Customer & Sales Support", desc: "Prompt email responses, ticket handling, CRM updating, follow-ups, and sales pipeline assistance." },
-  { title: "Travel Virtual Assistance", desc: "End-to-end travel booking, detailed itinerary compilation, schedule adjustments, and logistics support." },
-  { title: "Research & Documentation", desc: "In-depth web research, competitor analysis, report drafting, meeting minutes, and document structuring." }
+  { title: "AI Workflow Automation", desc: "Practical workflow automation with n8n, Zapier, and Google Workspace to reduce repetitive steps and keep information moving." },
+  { title: "AI Agents & Chatbots", desc: "Helpful conversational tools and intake flows designed around real customer needs and clear human handoff." },
+  { title: "Administrative & Executive Support", desc: "Inbox and calendar coordination, document preparation, data organization, and reliable day-to-day operations support." },
+  { title: "CRM, Lead & Customer Support", desc: "CRM updates, client communication, lead tracking, follow-ups, and sales support that keeps conversations moving." },
+  { title: "Research, Data & Reporting", desc: "Careful web research, data entry and cleanup, documentation, meeting notes, and clear reports." },
+  { title: "Travel & Logistics Support", desc: "Travel research, itinerary preparation, booking coordination, schedule changes, and logistics assistance." }
 ];
 
 // Portfolio including JPEGs for Travel, Sales, and Admin support work
@@ -630,7 +670,7 @@ const PORTFOLIO = [
     tag: "Sales Support",
     image: "assets/work/sales-support.jpg",
     objective: "Maintain up-to-date customer records and organize outreach schedules for prospective leads.",
-    outcome: "Improved CRM data accuracy by 95% and streamlined follow-up turnaround times.",
+    outcome: "Organized customer records and follow-up schedules to support a more consistent sales process.",
     tools: ["HubSpot CRM", "Salesforce", "Google Sheets", "Email Automation"],
     evidence: "assets/work/sales-support.jpeg"
   },
@@ -668,9 +708,9 @@ const CERTIFICATIONS = [
 ];
 
 const WHY_HIRE = [
-  { title: "Diplomatic & Professional", desc: "Background in Political Science and Diplomacy translates into articulate, composed, and discreet client communications." },
-  { title: "Versatile Experience", desc: "Proven track record across travel, warranty administration, logistics, and sales operations." },
-  { title: "Reliable & Independent", desc: "Thrives in remote environments with minimal supervision, taking full ownership of assigned workflows." }
+  { title: "Thoughtful Communication", desc: "Clear, composed client communication shaped by research, writing, and cross-cultural awareness." },
+  { title: "Flexible Operations Support", desc: "Practical help across administration, customer and sales support, travel coordination, and workflow projects." },
+  { title: "Reliable Follow-through", desc: "Keeps priorities, records, and next steps organized while handling changing requests." }
 ];
 
 const WORKFLOW_STEPS = [
@@ -764,28 +804,18 @@ function initRoleRotator() {
   }, 3000);
 }
 
-function renderExperience() {
-  const list = document.getElementById('experience-list');
-  if (!list) return;
-  list.innerHTML = EXPERIENCES.map((exp, idx) => `
-    <li class="relative pl-7 sm:pl-9 reveal">
-      <div aria-hidden="true" class="absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full border-2" style="background-color:var(--bg);border-color:var(--accent)"></div>
-      <div class="card-surface rounded-2xl p-6 sm:p-7">
-        <div class="flex flex-wrap items-start justify-between gap-2">
-          <div>
-            <h3 class="font-display text-lg sm:text-xl font-semibold" style="color:var(--text)">${exp.role}</h3>
-            <p class="mt-0.5 text-sm font-medium" style="color:var(--accent)">${exp.company}</p>
-          </div>
-          <div class="text-right">
-            <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold" style="background-color:var(--bg-secondary);color:var(--text-muted);border:1px solid var(--border)">${exp.period}</span>
-            <p class="mt-1 text-xs" style="color:var(--text-muted)">${exp.type}</p>
-          </div>
-        </div>
-        <ul class="mt-4 space-y-2 text-sm leading-relaxed" style="color:var(--text-secondary)">
-          ${exp.bullets.map(b => `<li class="flex items-start gap-2"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full" style="background-color:var(--accent)"></span><span>${b}</span></li>`).join('')}
-        </ul>
-      </div>
-    </li>
+function renderProjects() {
+  const grid = document.getElementById('projects-grid');
+  if (!grid) return;
+  grid.innerHTML = PROJECTS.map(project => `
+    <article class="card-surface reveal flex flex-col rounded-xl p-6 sm:p-7">
+      <p class="text-xs font-semibold uppercase tracking-wide" style="color:var(--accent)">${project.type}</p>
+      <h3 class="font-display mt-3 text-xl font-semibold leading-snug" style="color:var(--text)">${project.title}</h3>
+      <p class="mt-3 text-sm leading-relaxed" style="color:var(--text-secondary)">${project.summary}</p>
+      ${project.stages
+        ? `<ol class="project-stage-list mt-5 space-y-3">${project.stages.map((stage, index) => `<li class="flex items-start gap-3 text-sm leading-relaxed" style="color:var(--text-secondary)"><span class="shrink-0 font-semibold" style="color:var(--accent)">${String(index + 1).padStart(2, '0')}</span><span>${stage}</span></li>`).join('')}</ol>`
+        : `<ul class="mt-5 space-y-3">${project.points.map(point => `<li class="flex items-start gap-3 text-sm leading-relaxed" style="color:var(--text-secondary)"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full" style="background-color:var(--accent)"></span><span>${point}</span></li>`).join('')}</ul>`}
+    </article>
   `).join('');
 }
 
@@ -817,7 +847,6 @@ function renderSkills() {
 
 function renderServices() {
   const grid = document.getElementById('services-grid');
-  const select = document.getElementById('service-select');
   if (!grid) return;
 
   grid.innerHTML = SERVICES.map(s => `
@@ -826,23 +855,20 @@ function renderServices() {
         <h3 class="font-display text-lg font-semibold" style="color:var(--text)">${s.title}</h3>
         <p class="mt-3 text-sm leading-relaxed" style="color:var(--text-muted)">${s.desc}</p>
       </div>
-      <a href="#contact" onclick="document.getElementById('service-select').value='${s.title}'" class="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold hover:underline" style="color:var(--accent)">
-        Request Service <span class="icon" data-icon="arrow-right" data-size="12"></span>
+      <a href="#contact" onclick="document.getElementById('dx-launcher').click(); return false;" class="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold hover:underline" style="color:var(--accent)">
+        Ask about this service <span class="icon" data-icon="arrow-right" data-size="12"></span>
       </a>
     </div>
   `).join('');
-
-  if (select) {
-    select.innerHTML = SERVICES.map(s => `<option>${s.title}</option>`).join('') + `<option>General Administrative Support</option>`;
-  }
 }
 
 function renderPortfolio() {
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
+  const emptyState = document.getElementById('ai-workflows-empty');
 
   grid.innerHTML = PORTFOLIO.map(p => `
-    <div class="card-surface reveal group overflow-hidden rounded-2xl cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg" onclick="openProjectModal('${p.id}')">
+    <div data-work-category="support" class="card-surface reveal group overflow-hidden rounded-2xl cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg" onclick="openProjectModal('${p.id}')">
       <div class="aspect-[16/9] overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
         <img src="${p.image}" alt="${p.title}" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/600x337/2563EB/FFFFFF?text=${encodeURIComponent(p.tag)}';" />
         <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -856,6 +882,20 @@ function renderPortfolio() {
       </div>
     </div>
   `).join('');
+  document.querySelectorAll('.portfolio-filter').forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+      grid.classList.toggle('hidden', filter === 'AI Workflow');
+      if (emptyState) emptyState.classList.toggle('hidden', filter !== 'AI Workflow');
+      grid.querySelectorAll('[data-work-category]').forEach(card => {
+        card.classList.toggle('hidden', filter !== 'all' && filter !== card.dataset.workCategory);
+      });
+      document.querySelectorAll('.portfolio-filter').forEach(item => {
+        item.style.background = item === button ? 'var(--accent)' : 'transparent';
+        item.style.color = item === button ? '#fff' : 'var(--text)';
+      });
+    });
+  });
 }
 
 function openProjectModal(id) {
@@ -1017,7 +1057,7 @@ window.onload = function() {
   initNavigation();
   initThemeToggle();
   initRoleRotator();
-  renderExperience();
+  renderProjects();
   renderSkills();
   renderServices();
   renderPortfolio();
@@ -1033,5 +1073,196 @@ window.onload = function() {
   setTimeout(initScrollReveal, 100);
 };
 </script>
+<!-- DEXTER CHAT WIDGET: paste this whole block just before </body> in your site's index.html -->
+<style>
+  #dx-launcher{position:fixed;right:20px;bottom:max(20px, env(safe-area-inset-bottom));z-index:99999;display:flex;align-items:center;gap:8px;background:#E29A38;color:#142A40;border:0;border-radius:999px;padding:12px 18px;font:600 15px/1 system-ui,sans-serif;cursor:pointer;box-shadow:0 6px 20px rgba(20,42,64,.24)}
+  #dx-launcher:hover{background:#CF8627}
+  #dx-box{position:fixed;right:20px;bottom:max(80px, calc(env(safe-area-inset-bottom) + 60px));z-index:99999;width:370px;max-width:calc(100vw - 24px);height:560px;max-height:calc(100vh - 100px);background:#fff;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.25);display:none;flex-direction:column;overflow:hidden;font:15px/1.45 system-ui,sans-serif;color:#111827}
+  #dx-box.dx-open{display:flex}
+  #dx-head{background:#18324B;color:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between}
+  #dx-head b{font-size:16px}#dx-head small{display:block;opacity:.85;font-size:12px}
+  #dx-close{background:none;border:0;color:#fff;font-size:22px;cursor:pointer;line-height:1}
+  #dx-log{flex:1;overflow-y:auto;padding:14px;background:#f3f4f6;display:flex;flex-direction:column;gap:8px}
+  .dx-m{max-width:85%;padding:9px 12px;border-radius:14px;white-space:pre-wrap;word-wrap:break-word}
+  .dx-bot{background:#fff;align-self:flex-start;border-bottom-left-radius:4px}
+  .dx-me{background:#18324B;color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+  #dx-in{padding:10px;border-top:1px solid #e5e7eb;background:#fff}
+  .dx-chips{display:flex;flex-direction:column;gap:6px}
+  .dx-chip{background:#fff;border:1.5px solid #18324B;color:#18324B;border-radius:10px;padding:9px 12px;font:600 14px system-ui,sans-serif;cursor:pointer;text-align:left}
+  .dx-chip:hover{background:#eff6ff}
+  .dx-chip.dx-skip{border-color:#9ca3af;color:#6b7280;font-weight:500}
+  .dx-row{display:flex;gap:6px;align-items:flex-end}
+  .dx-row input,.dx-row textarea{flex:1;border:1.5px solid #d1d5db;border-radius:10px;padding:9px 11px;font:15px system-ui,sans-serif;resize:none}
+  .dx-row input:focus,.dx-row textarea:focus{outline:none;border-color:#18324B}
+  .dx-send{background:#E29A38;color:#142A40;border:0;border-radius:10px;padding:10px 14px;font:600 14px system-ui,sans-serif;cursor:pointer}
+  .dx-send:disabled{opacity:.5;cursor:default}
+  .dx-skipline{margin-top:6px;text-align:right}
+  .dx-skipline button{background:none;border:0;color:#6b7280;font:13px system-ui,sans-serif;cursor:pointer;text-decoration:underline}
+  .dx-err{color:#b91c1c;font-size:13px;margin-bottom:6px}
+</style>
+
+<button id="dx-launcher" aria-label="Chat with Dexter">&#128172; Chat with Dexter</button>
+<div id="dx-box" role="dialog" aria-label="Chat with Dexter">
+  <div id="dx-head"><div><b>Dexter</b><small>Promise's assistant &middot; project enquiries</small></div><button id="dx-close" aria-label="Close chat">&times;</button></div>
+  <div id="dx-log"></div>
+  <div id="dx-in"></div>
+</div>
+
+<script>
+(function () {
+  // 1) After you publish the n8n workflow, paste its PRODUCTION webhook URL here:
+  var WEBHOOK_URL = 'https://promisedexterkaparadza.app.n8n.cloud/webhook/dexter-chat-intake';
+
+  var SERVICES = [
+    'AI Workflow Automation (n8n, Zapier, Google Workspace)',
+    'AI Agents & Chatbots',
+    'Administrative & Executive Support',
+    'CRM, Lead Follow-up & Sales Support',
+    'Customer Support & Client Communication',
+    'Research, Data Entry & Reporting',
+    'Travel & Logistics Support'
+  ];
+
+  var STEPS = [
+    { key: 'name',    ask: 'What is your name?', type: 'text', req: true },
+    { key: 'email',   ask: 'What is the best email address to reach you on?', type: 'email', req: true },
+    { key: 'phone',   ask: 'What is your WhatsApp or phone number? Please include the country code, for example +1 555 123 4567.', type: 'tel', req: true },
+    { key: 'company', ask: 'What is your business or company name?', type: 'text', req: true },
+    { key: 'dueDate', ask: 'When do you need this done by?', type: 'date', req: true },
+    { key: 'task',    ask: 'Describe the task or problem you want help with. The more detail, the better.', type: 'textarea', req: true, skipIfOther: true },
+    { key: 'budget',  ask: 'Optional: do you have a budget in mind? You can skip this.', type: 'chips', req: false, options: ['Under $250', '$250 to $500', '$500 to $1,000', '$1,000+', 'Not sure yet'] },
+    { key: 'tools',   ask: 'Optional: which tools do you use now (CRM, email, spreadsheets, etc.)?', type: 'text', req: false },
+    { key: 'timezone',ask: 'Optional: what time zone are you in?', type: 'text', req: false },
+    { key: 'workType',ask: 'Optional: is this a one-off project or ongoing support?', type: 'chips', req: false, options: ['One-off project', 'Ongoing support', 'Not sure yet'] },
+    { key: 'notes',   ask: 'Optional: any link or extra note you want me to see?', type: 'text', req: false }
+  ];
+
+  var data = {};
+  var stepIndex = -1;
+  var started = false;
+  var log = document.getElementById('dx-log');
+  var input = document.getElementById('dx-in');
+  var box = document.getElementById('dx-box');
+
+  function say(text, who) {
+    var d = document.createElement('div');
+    d.className = 'dx-m ' + (who === 'me' ? 'dx-me' : 'dx-bot');
+    d.textContent = text;
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+  }
+  function clearInput() { input.innerHTML = ''; }
+  function chips(options, onPick, withSkip) {
+    clearInput();
+    var wrap = document.createElement('div'); wrap.className = 'dx-chips';
+    options.forEach(function (o) {
+      var b = document.createElement('button'); b.className = 'dx-chip'; b.textContent = o;
+      b.onclick = function () { onPick(o); }; wrap.appendChild(b);
+    });
+    if (withSkip) {
+      var s = document.createElement('button'); s.className = 'dx-chip dx-skip'; s.textContent = 'Skip this one';
+      s.onclick = function () { onPick(null); }; wrap.appendChild(s);
+    }
+    input.appendChild(wrap);
+  }
+  function field(step, onSubmit) {
+    clearInput();
+    var err = document.createElement('div'); err.className = 'dx-err'; input.appendChild(err);
+    var row = document.createElement('div'); row.className = 'dx-row';
+    var el = document.createElement(step.type === 'textarea' ? 'textarea' : 'input');
+    if (step.type === 'textarea') { el.rows = 3; } else { el.type = step.type; }
+    if (step.type === 'date') { el.min = new Date().toISOString().slice(0, 10); }
+    if (step.type === 'email') { el.autocomplete = 'email'; }
+    if (step.type === 'tel') { el.autocomplete = 'tel'; }
+    el.placeholder = step.req ? 'Required' : 'Optional';
+    var btn = document.createElement('button'); btn.className = 'dx-send'; btn.textContent = 'Send';
+    function go() {
+      var v = el.value.trim();
+      var problem = validate(step, v);
+      if (problem) { err.textContent = problem; return; }
+      onSubmit(v);
+    }
+    btn.onclick = go;
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter' && step.type !== 'textarea') { e.preventDefault(); go(); } });
+    row.appendChild(el); row.appendChild(btn); input.appendChild(row);
+    if (!step.req) {
+      var sl = document.createElement('div'); sl.className = 'dx-skipline';
+      var sb = document.createElement('button'); sb.textContent = 'Skip this one';
+      sb.onclick = function () { onSubmit(null); }; sl.appendChild(sb); input.appendChild(sl);
+    }
+    setTimeout(function () { el.focus(); }, 50);
+  }
+  function validate(step, v) {
+    if (step.req && !v) return 'This one is required.';
+    if (!v) return '';
+    if (step.key === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return 'That email does not look right.';
+    if (step.key === 'phone' && v.replace(/\D/g, '').length < 7) return 'Please enter a full number with country code.';
+    if (step.key === 'dueDate' && v < new Date().toISOString().slice(0, 10)) return 'Please pick today or a future date.';
+    if (step.key === 'task' && v.length < 15) return 'Please add a bit more detail (at least a sentence).';
+    return '';
+  }
+
+  function start() {
+    if (started) return; started = true;
+    say("Hi! 👋 I’m Dexter, Promise’s virtual assistant. How can I help you today? Tell me what you need, and I’ll make sure Promise gets back to you!");
+    var opts = ['Other (type your own request)'].concat(SERVICES);
+    chips(opts, function (o) {
+      say(o, 'me');
+      if (o.indexOf('Other') === 0) {
+        data.service = 'Other (custom request)'; data.isOther = true;
+        say('Tell me what you actually need, in your own words.');
+        field({ key: 'task', type: 'textarea', req: true }, function (v) { data.task = v; say(v, 'me'); next(); });
+      } else { data.service = o; next(); }
+    }, false);
+  }
+
+  var optionalIntroShown = false;
+  function next() {
+    stepIndex++;
+    while (stepIndex < STEPS.length && STEPS[stepIndex].skipIfOther && data.isOther) stepIndex++;
+    if (stepIndex >= STEPS.length) return review();
+    var s = STEPS[stepIndex];
+    if (!s.req && !optionalIntroShown) { optionalIntroShown = true; say('Thanks. That covers the essentials. A few quick optional questions now, and you can skip any of them.'); }
+    say(s.ask);
+    var done = function (v) { if (v === null) { say('Skipped', 'me'); } else { data[s.key] = v; say(v, 'me'); } next(); };
+    if (s.type === 'chips') chips(s.options, done, true); else field(s, done);
+  }
+
+  function review() {
+    var lines = ['Here is what I have:', '',
+      'Service: ' + data.service, 'Name: ' + data.name, 'Email: ' + data.email, 'Contact: ' + data.phone,
+      'Company: ' + data.company, 'Due date: ' + data.dueDate, 'Task: ' + data.task];
+    ['budget', 'tools', 'timezone', 'workType', 'notes'].forEach(function (k) { if (data[k]) lines.push(k + ': ' + data[k]); });
+    say(lines.join('\n'));
+    chips(['Looks good, send it', 'Start over'], function (o) { if (o === 'Start over') reset(); else submit(); }, false);
+  }
+
+  function reset() {
+    data = {}; stepIndex = -1; started = false; optionalIntroShown = false; log.innerHTML = ''; clearInput(); start();
+  }
+
+  function submit() {
+    clearInput(); say('Sending your details...');
+    var payload = {}; for (var k in data) { if (k !== 'isOther') payload[k] = data[k]; }
+    payload.website = '';
+    fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (res) {
+        if (res.ok && res.j && res.j.ok) {
+          say('Done. Your request is in. Your reference is ' + res.j.reference + '. You will get a confirmation on WhatsApp and by email, and Promise will be in touch soon.');
+          chips(['Send another request'], function () { reset(); }, false);
+        } else { throw new Error('bad'); }
+      })
+      .catch(function () {
+        say('Something went wrong sending that. Please try again, or message Promise directly on WhatsApp: https://wa.me/263776768932');
+        chips(['Try again'], function () { submit(); }, false);
+      });
+  }
+
+  document.getElementById('dx-launcher').onclick = function () { box.classList.toggle('dx-open'); if (box.classList.contains('dx-open')) start(); };
+  document.getElementById('dx-close').onclick = function () { box.classList.remove('dx-open'); };
+})();
+</script>
+
 </body>
 </html>
