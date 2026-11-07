@@ -53,33 +53,33 @@
     --font-body: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
     --font-mono: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
 
-    --bg: #081735;
-    --bg-2: #0E2147;
-    --surface: #0F2350;
+    --bg: #05080F;
+    --bg-2: #0B1325;
+    --surface: #0D1730;
     --heading: #FFFFFF;
-    --text: #E6EDFB;
-    --text-2: #C5D0EA;
-    --muted: #9DAED0;
-    --line: #1E3568;
-    --line-2: #2E4A86;
-    --accent: #FF7A9C;
-    --accent-hover: #FF9BB4;
+    --text: #E8EEF9;
+    --text-2: #C3CEE3;
+    --muted: #9AA9C4;
+    --line: #1B2A47;
+    --line-2: #2B4170;
+    --accent: #6DB3FF;
+    --accent-hover: #9CCBFF;
     --on-accent: #FFFFFF;
-    --btn-grad: linear-gradient(135deg, #C2154B 0%, #DF2A55 100%);
-    --btn-grad-hover: linear-gradient(135deg, #A91040 0%, #C81F48 100%);
-    --hero-grad: linear-gradient(135deg, #0B2559 0%, #081735 60%, #14123A 100%);
-    --tint-grad: linear-gradient(180deg, #0E2147 0%, #0A1A3B 100%);
-    --shadow: 0 12px 32px rgba(0, 0, 0, .35);
-    --inverse-bg: #0E2147;
-    --inverse-text: #E6EDFB;
-    --inverse-muted: #9DAED0;
-    --backdrop: rgba(0, 0, 0, .7);
-    --contact-bg: linear-gradient(135deg, #0B2559 0%, #0A1E4D 55%, #1A2A6B 100%);
+    --btn-grad: linear-gradient(135deg, #2D7BFF 0%, #0B47D6 100%);
+    --btn-grad-hover: linear-gradient(135deg, #1F6BFF 0%, #0839B0 100%);
+    --hero-grad: linear-gradient(135deg, #0C2260 0%, #070E24 45%, #020409 100%);
+    --tint-grad: linear-gradient(180deg, #0B1428 0%, #060B16 100%);
+    --shadow: 0 14px 36px rgba(0, 0, 0, .55);
+    --inverse-bg: #0B1325;
+    --inverse-text: #E8EEF9;
+    --inverse-muted: #9AA9C4;
+    --backdrop: rgba(0, 0, 0, .75);
+    --contact-bg: linear-gradient(135deg, #0D3399 0%, #07163F 50%, #020409 100%);
     --contact-text: #FFFFFF;
     --contact-muted: #C9D6EE;
-    --contact-line: rgba(255, 255, 255, .22);
+    --contact-line: rgba(255, 255, 255, .24);
     --contact-card: #FFFFFF;
-    --contact-card-text: #14213D;
+    --contact-card-text: #0A1630;
     --grid: rgba(255, 255, 255, .04);
 
     --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
@@ -87,6 +87,8 @@
     color-scheme: dark;
   }
   :root[data-theme="light"] {
+    --btn-grad: linear-gradient(135deg, #C2154B 0%, #DF2A55 100%);
+    --btn-grad-hover: linear-gradient(135deg, #A91040 0%, #C81F48 100%);
     --bg: #FFFFFF;
     --bg-2: #F0F5FB;
     --surface: #FFFFFF;
@@ -468,6 +470,26 @@
   @media (max-width: 480px) { #dx-box { right: 12px; width: calc(100vw - 24px); } #dx-launcher { right: 14px; } }
 
 
+
+  /* ---------- Dark theme: blue, white and a little black ---------- */
+  :root[data-theme="dark"] ::selection { background: #2D7BFF; }
+  :root[data-theme="dark"] #progress { background: linear-gradient(90deg, #2D7BFF, #BFDDFF); }
+  :root[data-theme="dark"] .btn-primary { box-shadow: 0 8px 22px rgba(45, 123, 255, .35); }
+  :root[data-theme="dark"] .hero h1 em { background: linear-gradient(90deg, #2D7BFF, #BFDDFF); background-repeat: no-repeat; background-position: 0 94%; background-size: 0 0.13em; animation: underline 800ms 1000ms var(--ease-out) forwards; }
+  :root[data-theme="dark"] .hero { background: var(--hero-grad); }
+  :root[data-theme="dark"] .navy { background: linear-gradient(165deg, #0B2A7A 0%, #07163F 52%, #02040A 100%); }
+  :root[data-theme="dark"] .navy .kicker::before { color: #7DB9FF; }
+  :root[data-theme="dark"] .navy .steps::after { background: linear-gradient(90deg, #2D7BFF, #BFDDFF); }
+  :root[data-theme="dark"] .navy .steps .s { background: #050B1C; border-color: #7DB9FF; color: #BFDDFF; }
+  :root[data-theme="dark"] .contact .kicker::before { color: #7DB9FF; }
+  :root[data-theme="dark"] .intake .kicker, :root[data-theme="dark"] .intake h3 { color: #0A1630; }
+  :root[data-theme="dark"] .intake .kicker::before { color: #1F6BFF; }
+  :root[data-theme="dark"] .svc .idx, :root[data-theme="dark"] .sample .tag { color: #7DB9FF; }
+  :root[data-theme="dark"] .proj, :root[data-theme="dark"] .svc, :root[data-theme="dark"] .skill-group, :root[data-theme="dark"] .sample, :root[data-theme="dark"] .quote, :root[data-theme="dark"] .board { background: linear-gradient(160deg, #0F1C3A 0%, #0A1226 100%); }
+  :root[data-theme="dark"] .chip > div { background: #0A1226; box-shadow: none; }
+  :root[data-theme="dark"] .marquee-half span::after { color: #4C94FF; }
+  :root[data-theme="dark"] .avatar { border-color: #4C94FF; color: #BFDDFF; }
+  :root[data-theme="dark"] .status, :root[data-theme="dark"] .site-header { background: rgba(5, 8, 15, .96); }
 
   #dx-launcher, .dx-send { background: var(--btn-grad); color: #FFFFFF; }
   #dx-launcher:hover, .dx-send:hover { background: var(--btn-grad-hover); }
@@ -892,7 +914,7 @@ function initTheme() {
     btn.innerHTML = dark ? ICON_SUN : ICON_MOON;
     btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', dark ? '#081735' : '#FFFFFF');
+    if (meta) meta.setAttribute('content', dark ? '#05080F' : '#FFFFFF');
   }
   btn.addEventListener('click', function () {
     var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
