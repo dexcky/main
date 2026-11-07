@@ -141,7 +141,8 @@
   .site-header { position: sticky; top: 0; z-index: 40; background: var(--bg); border-bottom: 1px solid var(--line); }
   .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
   .brand { font-family: var(--font-display); font-weight: 700; font-size: 1.1875rem; letter-spacing: -0.01em; text-decoration: none; display: inline-flex; align-items: baseline; gap: 10px; }
-  .brand .mark { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 6px; background: var(--text); color: var(--bg); font-size: 0.9375rem; letter-spacing: 0; align-self: center; }
+  .brand .mark { display: inline-grid; place-items: center; width: 52px; height: 34px; border-radius: 5px; background: #FFFFFF; align-self: center; overflow: hidden; }
+  .brand .mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
   .nav-desktop { display: none; align-items: center; gap: 28px; }
   .nav-desktop a { text-decoration: none; font-weight: 500; padding: 10px 2px; border-bottom: 2px solid transparent; }
   .nav-desktop a:hover { border-bottom-color: var(--line); }
@@ -323,6 +324,8 @@
   .intake p { color: var(--inverse-muted); }
   .intake .btn { justify-self: start; }
   .site-footer { padding-block: 28px 36px; border-top: 1px solid var(--inverse-line); font-size: 0.9375rem; color: var(--inverse-muted); }
+  .footer-brand { margin-bottom: 20px; }
+  .footer-logo { display: block; width: min(100%, 260px); height: auto; padding: 8px; border-radius: 8px; background: #FFFFFF; }
   .footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; align-items: center; }
   .footer-row nav { display: flex; gap: 6px 24px; flex-wrap: wrap; }
   .footer-row a { text-decoration: none; padding: 10px 0; display: inline-block; }
@@ -373,7 +376,7 @@
 
 <header class="site-header">
   <div class="wrap bar">
-    <a class="brand" href="#top" aria-label="Promise Dexter Kaparadza, back to top"><span class="mark" aria-hidden="true">PD</span><span>Promise Dexter Kaparadza</span></a>
+    <a class="brand" href="#top" aria-label="Promise Dexter Kaparadza, back to top"><span class="mark" aria-hidden="true"><img src="assets/dexdigitalflow-mark.png" alt="" /></span><span>Promise Dexter Kaparadza</span></a>
     <nav class="nav-desktop" aria-label="Main" id="nav-desktop"></nav>
     <div class="bar-tools">
       <a class="btn btn-ghost cv-link" href="assets/cv.pdf" target="_blank" rel="noopener">View CV</a>
@@ -564,6 +567,9 @@
 </main>
 
 <footer class="inverse site-footer">
+  <div class="wrap">
+    <div class="footer-brand"><img class="footer-logo" src="assets/dexdigitalflow-logo.png" alt="DexDigital Flow — Websites, AI, Automation" loading="lazy" /></div>
+  </div>
   <div class="wrap footer-row">
     <p>&copy; Promise Dexter Kaparadza. All rights reserved.</p>
     <nav aria-label="Footer">
