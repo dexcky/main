@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://promise-dexter-kaparadza.netlify.app/" />
 <meta property="og:title" content="Promise Dexter Kaparadza | Virtual Assistant and Operations Support" />
-<meta property="og:description" content="Project coordination and operations support, with practical automation and dependable follow-through." />
+<meta property="og:description" content="Remote support that keeps follow-ups, inbox on track, and from slipping, with simple AI workflows where they save time." />
 <meta property="og:image" content="https://promise-dexter-kaparadza.netlify.app/assets/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -476,6 +476,7 @@
   @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-copy{max-width:720px}.board{max-width:700px;margin-inline:auto}.projects{grid-template-columns:repeat(2,minmax(0,1fr))}.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:640px){.wrap{padding-inline:20px}.hero{padding-block:52px 64px}.hero h1{font-size:clamp(3.1rem,13vw,4.5rem)}section.block{padding-block:68px}.projects,.services,.feedback,.contact-grid{grid-template-columns:1fr}.proj{padding:22px}.svc{min-height:0}.sec-head h2{font-size:clamp(2.5rem,11vw,3.5rem)}.contact h2{font-size:clamp(2.8rem,12vw,4rem)}.board{padding:14px}}
   @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  
   /* Video palette balance: blue carries the surfaces; coral marks actions */
   .hero,.site-header{background:var(--mist)}
   .board,.proj,.svc,.skill-group,.sample,.quote{background:var(--white)}
@@ -504,7 +505,47 @@
     #dx-box{right:12px;bottom:max(72px,calc(env(safe-area-inset-bottom) + 64px));width:calc(100vw - 24px);max-width:420px}
   }
   @media(min-width:701px) and (max-width:980px){.proj{grid-template-columns:64px minmax(150px,.7fr) 1fr}.projects{gap:0}.contact-grid{grid-template-columns:1fr 1fr}}
-  </style>
+  
+  /* Dexter chat: compact, clear conversation panel */
+  #dx-launcher{min-height:50px;padding:0 17px;gap:9px;border-radius:12px;background:var(--coral);color:var(--navy);box-shadow:0 6px 20px rgba(0,41,65,.18);font-weight:700}
+  #dx-launcher:hover{background:#F85F63}
+  #dx-box{width:min(390px,calc(100vw - 32px));height:min(620px,calc(100dvh - 112px));right:20px;bottom:max(82px,calc(env(safe-area-inset-bottom) + 70px));border:1px solid var(--line-color);border-radius:12px;background:var(--white);box-shadow:0 20px 60px rgba(0,41,65,.2)}
+  #dx-box.dx-open{animation:dx-in 180ms ease-out}
+  @keyframes dx-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  #dx-head{min-height:78px;padding:14px 16px 14px 68px;position:relative;background:var(--navy);border-bottom:3px solid var(--soft-blue)}
+  #dx-head::before{content:'D';position:absolute;left:16px;top:17px;width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:var(--soft-blue);color:var(--navy);font:700 1.2rem/1 var(--font-display)}
+  #dx-head b{font:600 1.25rem/1.15 var(--font-display);letter-spacing:-.02em}
+  #dx-head small{margin-top:4px;color:var(--soft-blue);font-size:.8rem}
+  #dx-close{width:44px;height:44px;border:1px solid rgba(182,223,237,.3);border-radius:10px;color:var(--white)}
+  #dx-close:hover{background:rgba(182,223,237,.12)}
+  #dx-log{padding:18px 14px;gap:12px;background:var(--mist)}
+  .dx-m{max-width:88%;padding:11px 14px;border-radius:12px;font-size:.94rem;line-height:1.55;box-shadow:0 2px 7px rgba(0,41,65,.05)}
+  .dx-bot{align-self:flex-start;background:var(--white);border:1px solid var(--line-color);border-bottom-left-radius:4px;color:var(--navy)}
+  .dx-me{align-self:flex-end;background:var(--soft-blue);border:1px solid var(--soft-blue);border-bottom-right-radius:4px;color:var(--navy)}
+  #dx-in{padding:12px;background:var(--white);border-top:1px solid var(--line-color)}
+  .dx-chips{gap:7px;max-height:30dvh;padding:1px 2px 3px}
+  .dx-chip{min-height:46px;padding:10px 13px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line-color);border-radius:10px;background:var(--white);color:var(--navy);font:600 .9rem/1.35 var(--font-body);box-shadow:none}
+  .dx-chip::after{content:'→';flex:0 0 auto;color:var(--text-secondary);font-size:1rem}
+  .dx-chip:hover{background:var(--mist);border-color:var(--soft-blue)}
+  .dx-chip:active{transform:translateY(1px)}
+  .dx-chip.dx-skip{justify-content:center;background:transparent;border-style:dashed;color:var(--text-secondary)}
+  .dx-chip.dx-skip::after{content:none}
+  .dx-row{align-items:stretch}
+  .dx-row input,.dx-row textarea{min-height:48px;border:1px solid var(--line-color);border-radius:10px;background:var(--mist);padding:11px 13px;font-size:.95rem}
+  .dx-row input:focus,.dx-row textarea:focus{outline:3px solid var(--soft-blue);outline-offset:1px;border-color:var(--navy)}
+  .dx-send{min-height:48px;padding:0 17px;border-radius:10px;background:var(--coral);color:var(--navy);font-weight:700}
+  .dx-send:hover{background:#F85F63}
+  .dx-skipline button{min-height:44px;color:var(--text-secondary)}
+  .dx-err{color:var(--navy);font-size:.88rem}
+  @media(max-width:480px){
+    #dx-launcher{right:12px;bottom:max(12px,env(safe-area-inset-bottom))}
+    #dx-box{left:12px;right:12px;bottom:max(72px,calc(env(safe-area-inset-bottom) + 64px));width:auto;max-width:none;height:min(600px,calc(100dvh - 96px));border-radius:12px}
+    #dx-log{padding:14px 12px}
+    #dx-in{padding:10px}
+    .dx-m{max-width:92%}
+  }
+  @media(prefers-reduced-motion:reduce){#dx-box.dx-open{animation:none}}
+</style>
 </head>
 
 <body>
