@@ -544,7 +544,19 @@
     #dx-in{padding:10px}
     .dx-m{max-width:92%}
   }
-  @media(prefers-reduced-motion:reduce){#dx-box.dx-open{animation:none}}
+  /* Kanban illustration: cards move one lane at a time */
+  .chip{opacity:0;animation:travel 8s ease-in-out infinite;animation-delay:calc(var(--r)*1.15s)}
+  .chip i{animation:dot 8s linear infinite;animation-delay:calc(var(--r)*1.15s)}
+  @keyframes travel{
+    0%,7%{opacity:0;transform:translateX(-8px)}
+    12%,30%{opacity:1;transform:translateX(0)}
+    38%,56%{opacity:1;transform:translateX(100%)}
+    64%,82%{opacity:1;transform:translateX(200%)}
+    94%,100%{opacity:0;transform:translateX(208%)}
+  }
+  @keyframes dot{0%,34%{background:var(--coral)}35%,62%{background:var(--soft-blue)}63%,100%{background:var(--navy)}}
+  @media(prefers-reduced-motion:reduce){.chip,.chip i{animation:none;opacity:1}.chip{transform:translateX(200%)}}
+    @media(prefers-reduced-motion:reduce){#dx-box.dx-open{animation:none}}
 </style>
 </head>
 
